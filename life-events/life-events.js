@@ -1,4 +1,4 @@
-const trafficStop = {
+export const trafficStop = {
 
 
     id:'',
