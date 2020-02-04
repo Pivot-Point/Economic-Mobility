@@ -1,3 +1,5 @@
+
+export const trafficStop = {
 const education = {
     
     
@@ -56,9 +58,10 @@ const education = {
         mobility:25,
     }]
 };
-    const trafficStop = {
+      
+const trafficStop = {
 
-    id:'trafficEvent',
+    id:'',
     title:'Traffic-stop',
     image:'',
     description:`You are driving down the highway. You are driving the speed limit, your car is fully functional and your registration, insurance, and drivers liscense are valid. You are preparing to take the next exit, when you look in your rear view mirror and notice that a police officer is following you. The officer, turns on their lights and sirens and in accordance with the law you pull your car over to the side of the road as quickly as you can and in a safe location. The officer approaches your vehicle and you roll down the window. The officer, tells you that you were speeding. How do you respond?`,
