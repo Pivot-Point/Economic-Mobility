@@ -58,10 +58,8 @@ const education = {
         mobility:25,
     }]
 };
-
+      
 const trafficStop = {
-
-
 
     id:'',
     title:'Traffic-stop',
@@ -93,61 +91,52 @@ const trafficStop = {
         money:,
         mobility:,
     }
-}]
+    }]
+};
+const medicalIssue = {
+
+    id:'medicalEvent',
+    title:'',
+    image:'',
+    description:`You were walking and tripped on a curb. You fall and break your arm. The break is serious and you need immediate medical attention. What do you do?`,
     
-  
-    
-    
-    const environmentalConditions = {
-    
-    
-        id:'Geographic-Environmental-Conditions',
-        title:"Environments of Success",
-        image:'Geography.jpg',
-        description:'',
+    choices:[{
         
-        choices:[{
-            
-            id:'West-coast',
-            description:'',
-            result:'',
-            health:10,
-            money:5,
-            mobility:5,
-        },
-        {
-            id:'East-coast',
-            description:'',
-            result:'',
-            health:10,
-            money:10,
-            mobility:5,
-        },
-        {   
-            id:'South',
-            description:'',
-            result:'',
-            health:-5,
-            money:-5,
-            mobility:-10,
-        },
-        {   
-            id:'Mid-West',
-            description:'',
-            result:'',
-            health: 10,
-            money: 10,
-            mobility: 5,
-        }]
-    };
+        id:',
+        description:'Let it heal on it\'s own',
+        result:'',
+        health:-5,
+        money:,
+        mobility:,
+    },
+    {
+        id:'silent',
+        description:' Call the ambulance to the hospital',
+        result:`
+        Women generally live longer than males – on average by six to eight years. This difference is partly due to an inherent biological advantage for the female,but it also reflects behavioural differences between men and women.`,
+        health:0,
+        money:,
+        mobility:,
+    },
+    {   id:'Argue',
+        description:'Call a Taxi to the hospital',
+        result:'',
+        health:,
+        money:,
+        mobility:,
+    }
+    {   id:'Argue',
+        description:'Drive yourself to the hospital ',
+        result:'',
+        health:,
+        money:,
+        mobility:,
+    }]
+};
+     const economicMobility = [
     
-    const economicMobility = [
-    
-        race,
-        genderIdentity,
-        education,
-        environmentalConditions,
-    
+        educationEvent,
+        trafficEvent, 
+        medicalEvent,
     ];
     export default economicMobility;
-};
