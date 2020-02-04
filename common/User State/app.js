@@ -115,67 +115,48 @@ const genderIdentity = {
         mobility: 0,
     }],
 };
-
-const education = {
-
-
-    id:'Education',
-    title:'Degrees of Education',
-    image:'education.png',
-    description:`Research shows that the greatest single correlation of high income is the education level of one's parents.
-    The Fed study showed that income, earnings, and wealth increased with education levels.`,
-
+const environmentalConditions = {
+    
+    
+    id:'Geographic-Environmental-Conditions',
+    title:"Environments of Success",
+    image:'Geography.jpg',
+    description:'',
+    
     choices:[{
         
-        id:'High-School',
-        description:'',
-        result:'',
-        health: 0,
-        money: 0,
-        mobility: 0,
-    },
-    {
-        id:'Associate',
-        description:'',
-        result:'',
-        health: 5,
-        money: 5,
-        mobility: 5,
-    },
-    { id:'Bachelors',
-        description:'',
-        result:'',
-        health: 10,
-        money: 5,
-        mobility: 5,
-    },
-    {  
-        id:'Masters',
-        description:'',
-        result:'',
-        health: 15,
-        money: 20,
-        mobility: 20,
-    },
-    {
-        id:'PhD',
-        description:'',
-        result:'',
-        health: 20,
-        money: 25,
-        mobility: 50,
-    },
-    {
-        id:'Professional Degree',
+        id:'West-coast',
         description:'',
         result:'',
         health:10,
-        money:25,
-        mobility:25,
+        money:5,
+        mobility:5,
+    },
+    {
+        id:'East-coast',
+        description:'',
+        result:'',
+        health:10,
+        money:10,
+        mobility:5,
+    },
+    {   
+        id:'South',
+        description:'',
+        result:'',
+        health:-5,
+        money:-5,
+        mobility:-10,
+    },
+    {   
+        id:'Mid-West',
+        description:'',
+        result:'',
+        health: 10,
+        money: 10,
+        mobility: 5,
     }]
 };
-
-
 
 const environmentalConditions = {
 
@@ -220,12 +201,11 @@ const environmentalConditions = {
     }]
 };
 
-const economicMobility = [
+const characterObject = [
 
     race,
     genderIdentity,
-    education,
     environmentalConditions,
 
 ];
-export default economicMobility;
+export default characterObject;
