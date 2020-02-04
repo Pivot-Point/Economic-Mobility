@@ -12,10 +12,9 @@
 
 <body>
     <main class="main-container">
-        <form id="life-event-form">
+        <form id="user-race-form">
             <div>
-                <p id="life-event-description"></p>
-                <h3 id="life-event-prompt"></h3>
+                <h3 id="user-race-prompt"></h3>
             </div>
             <div id="options">
                 <label>
@@ -31,11 +30,14 @@
                     <input type="radio" name="option" value="yet-another-value">
                 </label> 
             </div>
-
             <div class="button-div">
                 <button id="choice-button">Choose</button>
             </div> 
-
+        </form>
+        <form id="user-gender-form">
+            <div>
+                <h3 id="user-gender-prompt"></h3>
+            </div>
                 <label>
                     First option
                     <input type="radio" name="option" value="some-value">
@@ -49,10 +51,54 @@
                     <input type="radio" name="option" value="yet-another-value">
                 </label> 
             </div>
-        <div class="button-div">
+            <div class="button-div">
+                    <button id="choice-button">Choose</button>
+            </div> 
+        </form>
+        <form id="user-region-form">
+            <div>
+                <h3 id="user-region-prompt"></h3>
+            </div>
+            <div id="options">
+                <label>
+                    First option
+                    <input type="radio" name="option" value="some-value">
+                </label>    
+                <label>
+                    Second option
+                    <input type="radio" name="option" value="another-value">
+                </label>
+                <label>
+                    Third option
+                    <input type="radio" name="option" value="yet-another-value">
+                </label> 
+            </div>
+            <div class="button-div">
                 <button id="choice-button">Choose</button>
-        </div> 
-
+            </div> 
+        </form>
+        <form id="pivot-questions-form">
+            <div>
+                <p id="pivot-question-description"></p>
+                <h3 id="pivot-question-prompt"></h3>
+            </div>
+            <div id="options">
+                <label>
+                    First option
+                    <input type="radio" name="option" value="some-value">
+                </label>    
+                <label>
+                    Second option
+                    <input type="radio" name="option" value="another-value">
+                </label>
+                <label>
+                    Third option
+                    <input type="radio" name="option" value="yet-another-value">
+                </label> 
+            </div>
+            <div class="button-div">
+                <button id="choice-button">Choose</button>
+            </div> 
         </form>
         <section id="result-section" class="hidden">
             <div class="chart-container">
@@ -65,14 +111,13 @@
                 <button id="continue-button">Continue</button>
             </div>
         </section>
-        <section class="sidebar-container">
-            
-            <img id="life-event-image" src="">
-            <div class="chart-container">
-            </div>
-            <a href="../about-us.html">About Us</a>
-        </section>
     </main>
+    <section class="sidebar-container">
+        <img id="life-event-image" src="">
+        <div class="chart-container">
+        </div>
+        <a href="../about-us.html">About Us</a>
+    </section>
     <script type="module" src="life-events.js"></script>
 </body>
 
