@@ -1,3 +1,5 @@
+
+export const trafficStop = {
 const education = {
     
     
@@ -58,6 +60,7 @@ const education = {
 };
 
 const trafficStop = {
+
 
 
     id:'',
