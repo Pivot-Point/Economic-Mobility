@@ -28,14 +28,14 @@ const race = {
     },
     {   
         //i went with Asian rather than Pacific Islander
-        id:'Asian or Pacific Islander',
+        id:'Asian',
         description:'A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian Subcontinent, including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam; has no Hispanic or Latino origins.',
         result:'',
         health:100,
         money:100,
         mobility:100,
     },
-    { id:'Native American or Indian',
+    { id:'Native American',
         description:'A person having origins in any of the original peoples of North and South America (including Central America) who maintains cultural identification through tribal affiliation or community attachment; has no Hispanic or Latino origins.',
         result:'',
         health:76,

@@ -1,23 +1,44 @@
-import {trafficStop} from './life-events.js';
+//name input from previous welcome page
+    //passes name to local storage
 
-const userState = {
-    name: 'senor george',
-    id:'senor george',
-    ethinicty: 'NH',
-  
-            health:80,
-            money:75,
-            mobility:75,
- 
- };
+//grab the name from local storage
+function pullUserName () {
+    const playerJSON = localStorage.getItem('user');
+    if (!playerJSON) return null;
+    const user = JSON.parse(playerJSON);
+    return user;
+}
 
-health : { healthSate: -40,
-            wealthState: +20
-        }
+//ethnicty selection button
+    //passses race object into the create character function
+const ethnicityButton = document.getElementById('race')
 
-        function setNew (user.ethnicity = NH) {
-            userState.state.halth = -40;
-        }
+//gender selection button 
+    //passes gender object into create character object
+
+//region selection button
+    //passses region into character creation object
+
+
+// create function for character creation page submit button
+
+function createCharacter (nameInput, ethnictyInput, backgroundInput, genderInput) {
+    const charcterObject = {
+        //ethnicity selection
+        id: race.choices[i].id,
+        description:race.choices[i].description,
+        result: race.choices[i].result,
+        health: race.choices[i].health,
+        money: race.choices[i].money,
+        mobility: race.choices[i].mobility,
+
+        //gender selection
+        gender: 
+    };
+
+
+
+}
 
  //find a user profile to set intial gameplay state
     function pullUserJSON () {
@@ -33,6 +54,10 @@ health : { healthSate: -40,
         //'user' is a key for local storage syntax not the og variable
         localStorage.setItem('user', playerJSON);
     }
+
+
+
+
 
     function renderQuestion () {
 
