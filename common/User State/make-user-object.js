@@ -7,8 +7,20 @@ export default function makeUser(formData) {
         region: formData.get('region'),
         wealth: '',
         health: '',
-        mobility: '',
+        uMobility: '',
     };
     return user;
 }
+
+    // make user object
+export const user = {
+    name: 'john',
+    race: 'white',
+    gender: 'male',
+    region: 'south',
+    wealth: 40,
+    health: 10,
+    uMobility: 30,
+};
+   
 

@@ -4,48 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link rel="stylesheet" href="status-bar.css"></link>
     <title>Document</title>
 </head>
 <body>
-    <canvas id="bar-chart-horizontal" width="300" height="200"></canvas>
-<script>
-var ctx = document.getElementById('bar-chart-horizontal').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'horizontalBar',
-    data: {
-        labels: ['health', 'wealth', 'mobility'],
-        datasets: [{
-            label: 'user status',
-            data: [80, 60, 40],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-        
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)', 
-            ],
-            borderWidth: 2 
-        }]
-    },
-    options: {
-        responsive: false,
-                scales: {
-                    xAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                
-                }
-            }]
-        }
-    }
-});
-</script>
+    <div>
+        <div id="barGraph" class="canvasContainer"></div>
+    <canvas id="barChart" width="300" height="200"></canvas>
 
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script type="module" src="User State/status-bar.js"> </script>
     
 </body>
 </html>
