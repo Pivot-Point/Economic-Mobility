@@ -7,9 +7,22 @@ export default function renderQuestion(questionObject)
 
     const creationTitle = document.createElement('h3');
 
+    creationTitle.textContent = questionObject.title;
+
     const questionDescription = document.createElement('p');
+    
+    questionDescription.textContent = questionObject.description; 
 
     userPromptDiv.append(creationTitle, questionDescription);
+    sectionContainer.append(userPromptDiv);
+
+    const buttonDiv = document.createElement('div');
+    const questionSubmitButton = document.createElement('button');
+    questionSubmitButton.id = 'question-submit-button';
+
+    questionSubmitButton.textContent = 'Submit';
+
+    buttonDiv.appendChild(questionSubmitButton); 
 
     const optionsDiv = document.createElement('div');
     optionsDiv.classList.add('options');
@@ -23,12 +36,14 @@ export default function renderQuestion(questionObject)
         optionsRadio.name = 'option';
         optionsRadio.required = true;
         optionsRadio.value = choice.id;
-        optionsLabel.append(choice.description);
-        console.log(optionsLabel)
-    }
+        optionsLabel.append(choice.id, optionsRadio);
+        sectionContainer.append(optionsLabel);
+    }  
+
     );
 
-    sectionContainer.append(userPromptDiv, optionsDiv);
+    sectionContainer.appendChild(optionsDiv);
+    sectionContainer.appendChild(buttonDiv);
 
     return sectionContainer;
 }
