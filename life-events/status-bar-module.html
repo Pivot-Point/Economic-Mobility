@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="status-bar.css">
+
+</head>
+<body>
+    <h2>How is your life going?</h2>
+    <!-- <div id="userProgress">
+    <div id="health-bar">
+        <div class="user-bar" style="width:50%" value="50" max="100">health</div>
+    
+    <div id="wealth-bar">
+         <div class="user-bar" style="width:50%" value="50" max="100">wealth</div>
+    
+    <div id="mobility-bar">
+        <div class="user-bar" style="width:50%" value="50" max="100">economic mobility</div> -->
+        <!-- <canvas id="results"></canvas>
+    <span id="results"></span> -->
+    <script type="module" src="results.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <canvas id="bar-chart-horizontal" width="300" height="200"></canvas>
+    <script>
+    new Chart(document.getElementById("bar-chart-horizontal"), {
+        type: 'horizontalBar',
+        data: {
+          labels: ["Health", "Wealth", "Mobility"],
+          datasets: [
+            {
+              label: "Your economic and health status",
+              backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
+              data: [100,120,75,]
+            }
+          ]
+        },
+        options: {},
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Your economic and health status change because of your race, gender, local, and life choices.'},
+ 
+    options: {
+        responsive: false
+        
+    }
+});
+</script>
+
+        
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
+
+

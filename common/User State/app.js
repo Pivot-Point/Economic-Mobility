@@ -119,7 +119,7 @@ const environmentalConditions = {
     
     
     id:'Geographic-Environmental-Conditions',
-    title:"Environments of Success",
+    title:'Environments of Success',
     image:'Geography.jpg',
     description:'',
     
@@ -155,50 +155,7 @@ const environmentalConditions = {
         health: 10,
         money: 10,
         mobility: 5,
-    }]
-};
-
-const environmentalConditions = {
-
-
-    id:'Geographic-Environmental-Conditions',
-    title:"Environments of Success",
-    image:'Geography.jpg',
-    description:'',
-    
-    choices:[{
-        
-        id:'West-coast',
-        description:'',
-        result:'',
-        health:10,
-        money:5,
-        mobility:5,
-    },
-    {
-        id:'East-coast',
-        description:'',
-        result:'',
-        health:10,
-        money:10,
-        mobility:5,
-    },
-    {   
-        id:'South',
-        description:'',
-        result:'',
-        health:-5,
-        money:-5,
-        mobility:-10,
-    },
-    {   
-        id:'Mid-West',
-        description:'',
-        result:'',
-        health: 10,
-        money: 10,
-        mobility: 5,
-    }]
+    }]        
 };
 
 const characterObject = [

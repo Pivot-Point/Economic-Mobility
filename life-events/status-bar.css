@@ -1,0 +1,78 @@
+/* #userProgress {
+    width: 100%;
+    background-color: blue;
+}
+
+#myBar {
+    width: 1%;
+    height: 30px;
+    background-color: lightblue; 
+} */
+/* #user-progress {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    background: #ddd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+  }
+  #health-bar {
+    background:coral;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    transition: width .5s linear;
+    border-radius: 5px;
+  }
+  #wealth-bar {
+    background: yellow;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    transition: width .5s linear;
+  }
+  #mobility-bar {
+    background:turquoise;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    transition: width .5s linear;
+  } */
+  /* html, body {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: #fff;
+}
+
+.progress {
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+.progress-bar {
+    margin-bottom: 5px;
+    width: 0%;
+    height: 30px;
+    position: relative;
+    background-color: rgb(66, 139, 202);
+}
+.progress-bar-text {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+
+    /*
+    Do not change the values below,
+    unless you want your text to display away from the bar itself. */
+    /* line-height: 30px;
+    vertical-align: middle;
+} */ */
