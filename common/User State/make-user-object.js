@@ -1,4 +1,5 @@
 export default function makeUser(formData) {
+    // make user object
     const user = {
         name: formData.get('name'),
         race: formData.get('race'),
