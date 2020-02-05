@@ -1,0 +1,14 @@
+
+.canvasContainer {
+    max-height: 300px;
+    max-width: 200px;
+    position: relative;
+    }
+    
+#barChart {
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    }
