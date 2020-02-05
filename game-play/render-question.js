@@ -1,20 +1,20 @@
-function renderGames(selectionObject) {
+export default function renderQuestion(questionObject) {
     const sectionContainer = document.createElement('section');
 
-    const userPrompt = document.createElement('div');
-    userPrompt.classList.add('user-prompt');
+    const userPromptDiv = document.createElement('div');
+    userPromptDiv.classList.add('user-prompt');
 
     const creationTitle = document.createElement('h3');
 
     const questionDescription = document.createElement('p');
 
-    userPrompt.append(creationTitle, questionDescription);
+    userPromptDiv.append(creationTitle, questionDescription);
 
     const optionsDiv = document.createElement('div');
     optionsDiv.classList.add('options');
 
-//place in for loop or for each to iterate through our choices 
-    selectionObject.choices.forEach(choice => {
+// iterate through choices
+    questionObject.choices.forEach(choice => {
         const optionsLabel = document.createElement('label');
         const optionsRadio = document.createElement('input');
         optionsRadio.type = 'radio';
@@ -24,9 +24,9 @@ function renderGames(selectionObject) {
         optionsLabel.appendChild(optionsRadio);
 
     }
-    )
-    //race.choices.forEach
-    sectionContainer.append(userPrompt, optionsDiv);
+    );
+
+    sectionContainer.append(userPromptDiv, optionsDiv);
 
     return sectionContainer;
 }
