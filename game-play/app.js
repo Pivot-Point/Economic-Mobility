@@ -20,11 +20,11 @@ import findById from '../common/find-by-id.js';
 //const questionObject = findById(characterObject, raceId)
 // get form from DOM
 // get results elements from DOM
-const form = document.querySelector('form')
+const form = document.querySelector('form');
 lifeEvents.forEach((event)=>{
     const section = renderQuestion(event);
     form.appendChild(section);
-})
+});
 
     // ensure that first three questions are 'user profile' questions; then ask remaining questions at random
 
