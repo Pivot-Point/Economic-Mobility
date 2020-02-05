@@ -1,4 +1,7 @@
 // import all question objects
+import renderQuestion from './render-question.js';
+import lifeEvents from './life-events.js';
+import findById from '../common/find-by-id.js';
 
   //Need specific objects (i.e. import 'race' object) Look at Colls file structure. 
 
@@ -14,11 +17,14 @@
 // get question id from URL and store as variable
 
 // find matching id using findById function (taking in search param and array)
-
+//const questionObject = findById(characterObject, raceId)
 // get form from DOM
 // get results elements from DOM
-
-// displayGame()
+const form = document.querySelector('form')
+lifeEvents.forEach((event)=>{
+    const section = renderQuestion(event);
+    form.appendChild(section);
+})
 
     // ensure that first three questions are 'user profile' questions; then ask remaining questions at random
 
@@ -27,7 +33,7 @@
         // create array of asked questions
             //Coll has outlined this type of array in lifeEvents.js and medicalIssueOutcomes.js
 
-            ==================================================================================== TABLEED
+        // ==================================================================================== TABLEED
         // set question array in local storage
             //We have function to acomplish this. 
 
@@ -37,7 +43,7 @@
         // if gender is not in the array, then pass in genderObject; otherwise, pass in regionObject
 
         // if region is not in the array, then pass in regionObject; otherwise, use getRandomQuestion function (passing in lifeEvents array) to randomly assign a question
-==========================================================================================================================================
+//==========================================================================================================================================
     
 // event listener on form submission -- Will look at the Event Listener - Needs to update state -
 

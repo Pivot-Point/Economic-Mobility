@@ -1,4 +1,5 @@
-export default function renderQuestion(questionObject) {
+export default function renderQuestion(questionObject) 
+{
     const sectionContainer = document.createElement('section');
 
     const userPromptDiv = document.createElement('div');
@@ -15,14 +16,15 @@ export default function renderQuestion(questionObject) {
 
 // iterate through choices
     questionObject.choices.forEach(choice => {
+        console.log(choice);
         const optionsLabel = document.createElement('label');
         const optionsRadio = document.createElement('input');
         optionsRadio.type = 'radio';
         optionsRadio.name = 'option';
         optionsRadio.required = true;
         optionsRadio.value = choice.id;
-        optionsLabel.appendChild(optionsRadio);
-
+        optionsLabel.append(choice.description);
+        console.log(optionsLabel)
     }
     );
 

@@ -1,7 +1,7 @@
 const classEvent = {
     
     
-    id:'parent',
+    id:'parent-incomes',
     title:'Social Class',
     image:'',
     description:``,
