@@ -6,9 +6,9 @@ export const user = {
     race: 'white',
     gender: 'male',
     region: 'south',
-    wealth: 25,
-    health: 70,
-    uMobility: 80,
+    wealth: 50,
+    health: 15,
+    uMobility: 130,
 };
 
 let healthState;
@@ -49,6 +49,9 @@ var myChart = new Chart(ctx, {
     },
     options: {
         responsive: false,
+        legend: {
+            display: false
+        },
         scales: {
             xAxes: [{
                 ticks: {

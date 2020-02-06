@@ -84,9 +84,9 @@ const genderIdentity = {
     },
     {
         id:'Female',
-        description:'',
-        result:`
+        description:`
         Women generally live longer than males – on average by six to eight years. This difference is partly due to an inherent biological advantage for the female, but it also reflects behavioral differences between men and women.`,
+        result:'',
         health:5,
         money:0,
         mobility:+5,
