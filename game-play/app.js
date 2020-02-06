@@ -9,7 +9,7 @@ import findById from '../common/find-by-id.js';
   const eventJSON = localStorage.setItem('life-events', JSON.stringify(lifeEvents));
 
 // get user from local storage
-// 
+//
 
 
 
