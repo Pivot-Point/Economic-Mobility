@@ -66,3 +66,8 @@ export function renderResults(questionObject)
 resultsSection.append(resultsDiv);
 resultsDiv.append(resultsHeader);
 resultsHeader.append(resultsDescription);
+}
+
+export default renderQuestion
+
+
