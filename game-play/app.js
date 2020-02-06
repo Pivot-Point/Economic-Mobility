@@ -12,7 +12,7 @@ import findById from '../common/find-by-id.js';
 // 
 
 
-}
+
 //Look at JSON function.
 
 // get query parameter from URL (this assumes that initial query parameter has been set to race)
@@ -108,5 +108,5 @@ const selectionID = formData('option');
             
         }
 
-    }
+    })
     
