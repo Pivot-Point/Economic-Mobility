@@ -1,15 +1,8 @@
 // import user from (Foobar)
 // health, wealth, u-mobility stats
 // import {user} from './make-user-object.js';
-export const user = {
-    name: 'john',
-    race: 'white',
-    gender: 'male',
-    region: 'south',
-    wealth: 50,
-    health: 40,
-    mobility: 60,
-};
+import { getUser } from '../User State/api.js';
+const user = getUser(); 
 
 let healthState;
 let wealthState;
@@ -26,8 +19,8 @@ function statusBar(fubaar) {
     return returnArray;
 }
 statusBar(user);
-var ctx = document.getElementById('barChart').getContext('2d');
-var myChart = new Chart(ctx, {
+const ctx = document.getElementById('barChart').getContext('2d');
+const myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
         labels: ['health', 'wealth', 'upward mobility'],

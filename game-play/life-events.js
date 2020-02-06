@@ -120,7 +120,7 @@ const environmentalConditions = {
 
 
     id:'Geographic-Environmental-Conditions',
-    title:"Environments of Success",
+    title:'Environments of Success',
     image:'Geography.jpg',
     description:'',
     
@@ -234,7 +234,7 @@ const trafficEvent = {
         wealth:1,
         mobility:1,
     },
-    {   id:'argue',
+    { id:'argue',
         description:'Agrue with the',
         result:'',
         health:1,
@@ -263,14 +263,14 @@ const medicalEvent = {
         wealth:1,
         mobility:1,
     },
-    {   id:'taxi',
+    { id:'taxi',
         description:'Call a Taxi to the hospital',
         result:'',
         health:1,
         wealth:1,
         mobility:1,
     },
-    {   id:'drive',
+    { id:'drive',
         description:'Drive yourself to the hospital',
         result:'',
         health:1,
@@ -278,7 +278,7 @@ const medicalEvent = {
         mobility:1,
     }]
 };
-const HousingEvent = {
+const housingEvent = {
     id:'housing-choice',
     title:'',
     image:'',
@@ -316,8 +316,8 @@ const HousingEvent = {
         mobility:1,
     }]
 };
-const EmployementEvent = {
-    id:'employement-issue',
+const employmentEvent = {
+    id:'employment-issue',
     title:'',
     image:'',
     description:'You are working at your desk at a new job when your boss asks you to come into their office. They propose that if you are interested they have an opportunity that will increase your earnings. As they tell you about this opportunity you realize that this against not only company HR policy but also against the law. What do you do?',
@@ -361,7 +361,7 @@ const lifeEvents = [
     educationEvent,
     trafficEvent,
     medicalEvent,
-    // housingEvent,
-    // employementEvent,
+    housingEvent,
+    employmentEvent,
 ];
 export default lifeEvents;
