@@ -128,8 +128,8 @@ const resultsDiv = document.getElementById('results-container');
     //The continue button will generate the next question.
 
 continueButton.addEventListener('click', () => {
-    window.location = '../game-play/?id=' + Gender
+    window.location = '../game-play/?id=' + gender.id.
         
         
-    });
+});
     
