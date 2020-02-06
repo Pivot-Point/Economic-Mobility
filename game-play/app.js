@@ -60,13 +60,16 @@ form.addEventListener('submit', (e) => {
 
 const formData = new FormData(form);
 const selectionID = formData('option');
+const option = findById()
+
 
 // updateUserObject() function:
     // update user object based on choice -- Coll and Dorje function
-        //grab user from local storage and increment or decrement health, wealth, mobility.
         
 // displayResults() function makes results appear on screen 
 //results box is statically rendered. We will only be dynamically rendering the h3 and p tags. In that container. See game-play | index.html for hardcoded. The results would you findElementById to locate the text for h3 and p. 
+
+    //set lifeEvent object into QueryParams and description 
 
 //<div class="results-container">
 // <h3 id="results-header"></h3>
@@ -76,6 +79,27 @@ const selectionID = formData('option');
 // toggle on display of results section
 
 // connect textContent of heading and paragraph to corresponding result
+
+function createLifeEventLink(choices) {
+    const link = document.createElement('p');
+    link.classList.add('journey');
+
+    link.href = '../journey/?id=' + journey.id;
+
+const searchParams = new URLSearchParams(window.location.search); 
+
+const resultsId = searchParams.get('')
+
+    const resultsSection = document.getElementById('result-section');
+    const resultsDiv = document.getElementById('results-container');
+    const resultsHeader = document.getElementById('results-header');
+    const resutsDescription = document.getElementById('results-description');
+
+   
+    resultsSection.append(resultsDiv);
+    resultsDiv.append(resultsHeader, resultsDescription);
+
+
 
     // insert corresponding image
     

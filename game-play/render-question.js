@@ -1,4 +1,4 @@
-export default function renderQuestion(questionObject) 
+export function renderQuestion(questionObject) 
 {
     const sectionContainer = document.createElement('section');
 
@@ -27,9 +27,9 @@ export default function renderQuestion(questionObject)
     const optionsDiv = document.createElement('div');
     optionsDiv.classList.add('options');
 
-// iterate through choices
+    
+    // iterate through choices
     questionObject.choices.forEach(choice => {
-        console.log(choice);
         const optionsLabel = document.createElement('label');
         const optionsRadio = document.createElement('input');
         optionsRadio.type = 'radio';
@@ -39,11 +39,30 @@ export default function renderQuestion(questionObject)
         optionsLabel.append(choice.id, optionsRadio);
         sectionContainer.append(optionsLabel);
     }  
-
+    
     );
-
+    
     sectionContainer.appendChild(optionsDiv);
     sectionContainer.appendChild(buttonDiv);
-
+    
     return sectionContainer;
 }
+
+export function renderResults(questionObject) 
+{
+    questionObject.choices.forEach(choice =>
+      {
+        const resultsSection = document.getElementById('result-section');
+        const resultsDiv = document.getElementById('results-container');
+
+
+      }  )
+    const resultsSection = document.getElementById('result-section');
+    const resultsDiv = document.getElementById('results-container');
+
+    const resultsHeader = document.createElement('h3');
+    const resultsDescription = document.createElement('p');
+
+resultsSection.append(resultsDiv);
+resultsDiv.append(resultsHeader);
+resultsHeader.append(resultsDescription);
