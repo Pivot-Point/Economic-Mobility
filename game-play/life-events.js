@@ -158,11 +158,6 @@ const environmentalConditions = {
     }]
 };
 
-
-
-
-
-
 const educationEvent = {
     id:'EducationEvent',
     title:'Degrees of Education',
