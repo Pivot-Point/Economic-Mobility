@@ -9,30 +9,28 @@ import findById from '../common/find-by-id.js';
   const eventJSON = localStorage.setItem('life-events', JSON.stringify(lifeEvents));
 
 // get user from local storage
-//
 
 
 
 //Look at JSON function.
 
-// get query parameter from URL (this assumes that initial query parameter has been set to race)
-//We would need to pull a specific ID from the splash page. 
-
-
-
+// get query parameter from URL
+const searchParams = new URLSearchParams(window.location.search);
 // get question id from URL and store as variable
+const questionId = searchParams.get('id');
 
 // find matching id using findById function (taking in search param and array)
-//const questionObject = findById(characterObject, raceId)
+const lifeEventQuestion = findById(lifeEvents, questionId);
+
 // get form from DOM
 // get results elements from DOM
 const continueButton = document.getElementById('continue-button');
 
 const form = document.querySelector('form');
-lifeEvents.forEach((event)=>{
-    const section = renderQuestion(event);
-    form.appendChild(section);
-});
+
+// render question
+renderQuestion(lifeEventQuestion);
+console.log(lifeEventQuestion);
 
 // ensure that first three questions are 'user profile' questions; then ask remaining questions at random
 
@@ -123,14 +121,7 @@ const resultsId = searchParams.get('')
     //The continue button will generate the next question.
 
     continueButton.addEventListener('click',() => {
-        
-        const eventJSON = localStorage.getItem('life-events');
-        const lifeEvents = JSON.parse(eventJSON)
 
-        while (form.firstChild) {
-            form.removeChild(form.firstChild)
-            
-        }
-
+        window.location = '../game-play/?id=';
     })
     
