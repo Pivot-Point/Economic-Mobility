@@ -61,7 +61,7 @@ form.addEventListener('submit', (e) => {
 const formData = new FormData(form);
 const selectionID = formData('option');
 const option = findById()
-
+})
 
 // updateUserObject() function:
     // update user object based on choice -- Coll and Dorje function
@@ -76,37 +76,42 @@ const option = findById()
 //<p id="results-description"></p>
 //</div>
 
-// toggle on display of results section
+// toggle on display of results 
 
 // connect textContent of heading and paragraph to corresponding result
 
-function createLifeEventLink(choices) {
-    const link = document.createElement('p');
-    link.classList.add('journey');
+    function createLifeEventLink(choices) {
 
-    link.href = '../journey/?id=' + journey.id;
+        const resultsDescription = document.getElementById('results-description');
+
+        link.href = '../choices/?id=' + choices.id;
+
+        return resultsDescription;
+
+}
+
+export default createLifeEventLink;
+
+
+
+
 
 const searchParams = new URLSearchParams(window.location.search); 
 
 const resultsId = searchParams.get('')
 
-    const resultsSection = document.getElementById('result-section');
-    const resultsDiv = document.getElementById('results-container');
+const resultsSection = document.getElementById('result-section');
+const resultsDiv = document.getElementById('results-container');
     const resultsHeader = document.getElementById('results-header');
-    const resutsDescription = document.getElementById('results-description');
 
    
-    resultsSection.append(resultsDiv);
-    resultsDiv.append(resultsHeader, resultsDescription);
-
-
 
     // insert corresponding image
     
     // renderChart() function:
     // Will update chart based on choice (note: we will need two arrays: one for labels, the other with the corresponding scores)
 
-})
+
 
 
 // prevent default behavior
@@ -122,15 +127,9 @@ const resultsId = searchParams.get('')
 
     //The continue button will generate the next question.
 
-    continueButton.addEventListener('click',() => {
+continueButton.addEventListener('click', () => {
+    window.location = '../game-play/?id=' + Gender
         
-        const eventJSON = localStorage.getItem('life-events');
-        const lifeEvents = JSON.parse(eventJSON)
-
-        while (form.firstChild) {
-            form.removeChild(form.firstChild)
-            
-        }
-
-    })
+        
+    });
     
