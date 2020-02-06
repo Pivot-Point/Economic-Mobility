@@ -65,9 +65,6 @@ const option = findById()
 
 // updateUserObject() function:
     // update user object based on choice -- Coll and Dorje function
-        //grab user from local storage and increment or decrement health, money, umobility
-
-
         
 // displayResults() function makes results appear on screen 
 //results box is statically rendered. We will only be dynamically rendering the h3 and p tags. In that container. See game-play | index.html for hardcoded. The results would you findElementById to locate the text for h3 and p. 

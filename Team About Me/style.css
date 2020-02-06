@@ -1,0 +1,56 @@
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    margin: 10px;
+    border-radius: 50%;
+    opacity: 1;
+    display: block;
+    width: 200px;
+    height: 200px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+
+}
+
+.container:hover .image {
+    opacity: 0.3;
+
+}
+
+.container:hover .middle {
+    opacity: 1;
+
+}
+
+.text {
+    background-color: rgb(74, 206, 191, 1);
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+
+}
+
+.title {
+    text-align: center;
+    font-size: ;
+    font-style: italic;
+    padding: 10px 15px;
+
+}
