@@ -1,11 +1,7 @@
-import findById from './find-by-id'
-//healthState, wealthState, mobility
-function userUpdate (formData.value) {
-    const selected = FormData.value
-    const userChoice = findById
-    findById(array, selected) 
-    userChoice.health
-        
 
-    
+//healthState, wealthState, mobility
+export default function userUpdate(user, event) {
+    user.wealth = user.wealth + event.wealth;
+    user.health = user.health + event.health;
+    user.mobility = user.mobility + event.mobility; return user;  
 }

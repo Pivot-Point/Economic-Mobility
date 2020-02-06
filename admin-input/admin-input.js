@@ -12,7 +12,7 @@ const classEvent = {
         description:'High School or GED',
         result:'',
         health: 0,
-        money: 0,
+        wealth: 0,
         mobility: 0,
     },
     {
@@ -20,14 +20,14 @@ const classEvent = {
         description:'Associates Degree',
         result:'',
         health: 5,
-        money: 5,
+        wealth: 5,
         mobility: 5,
     },
     { id:'bachelors',
         description:'Bachelors Degree',
         result:'',
         health: 10,
-        money: 5,
+        wealth: 5,
         mobility: 5,
     },
     {  
@@ -35,7 +35,7 @@ const classEvent = {
         description:'Masters Degree',
         result:'',
         health: 15,
-        money: 20,
+        wealth: 20,
         mobility: 20,
     },
     {
@@ -43,15 +43,15 @@ const classEvent = {
         description:'Doctorate',
         result:'',
         health: 20,
-        money: 25,
+        wealth: 25,
         mobility: 50,
     },
     {
         id:'professional-degree',
-        description:'Technical or Professional Cerficate',
+        description:'Technical or Professional Certificate',
         result:'',
         health:10,
-        money:25,
+        wealth:25,
         mobility:25,
     }]
 };

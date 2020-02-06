@@ -2,7 +2,7 @@
 
 
 //USER CREATION PAGE
-//Original state (i.e. health stats, wealth stats, and umobility stats) will need to be represented on screen already. 
+//Original state (i.e. health stats, wealth stats, and mobility stats) will need to be represented on screen already. 
 
 
 //FUNCTION BEGINS

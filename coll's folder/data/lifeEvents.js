@@ -15,7 +15,7 @@ const education = {
         description:'',
         result:'',
         health: 0,
-        money: 0,
+        wealth : 0,
         mobility: 0,
     },
     {
@@ -23,14 +23,14 @@ const education = {
         description:'',
         result:'',
         health: 5,
-        money: 5,
+        wealth: 5,
         mobility: 5,
     },
     { id:'Bachelors',
         description:'',
         result:'',
         health: 10,
-        money: 5,
+        wealth: 5,
         mobility: 5,
     },
     {  
@@ -38,7 +38,7 @@ const education = {
         description:'',
         result:'',
         health: 15,
-        money: 20,
+        wealth: 20,
         mobility: 20,
     },
     {
@@ -46,7 +46,7 @@ const education = {
         description:'',
         result:'',
         health: 20,
-        money: 25,
+        wealth: 25,
         mobility: 50,
     },
     {
@@ -54,7 +54,7 @@ const education = {
         description:'',
         result:'',
         health:10,
-        money:25,
+        wealth:25,
         mobility:25,
     }]
 };
@@ -68,11 +68,11 @@ const trafficStop = {
     
     choices:[{
         
-        id:'comply,
+        id:'comply',
         description:'',
         result:'',
         health:-5,
-        money:,
+        wealth:,
         mobility:,
     },
     {
@@ -81,14 +81,14 @@ const trafficStop = {
         result:`
         Women generally live longer than males – on average by six to eight years. This difference is partly due to an inherent biological advantage for the female,but it also reflects behavioural differences between men and women.`,
         health:0,
-        money:,
+        wealth:,
         mobility:,
     },
     {   id:'Argue',
         description:'Trans-gender',
         result:'',
         health:,
-        money:,
+        wealth:,
         mobility:,
     }
     }]
@@ -106,30 +106,30 @@ const medicalIssue = {
         description:'Let it heal on it\'s own',
         result:'',
         health:-5,
-        money:,
+        wealth:,
         mobility:,
     },
     {
         id:'silent',
         description:' Call the ambulance to the hospital',
         result:`
-        Women generally live longer than males – on average by six to eight years. This difference is partly due to an inherent biological advantage for the female,but it also reflects behavioural differences between men and women.`,
+        Women generally live longer than males – on average by six to eight years. This difference is partly due to an inherent biological advantage for the female,but it also reflects behavioral differences between men and women.`,
         health:0,
-        money:,
+        wealth:,
         mobility:,
     },
     {   id:'Argue',
         description:'Call a Taxi to the hospital',
         result:'',
         health:,
-        money:,
+        wealth:,
         mobility:,
     }
     {   id:'Argue',
         description:'Drive yourself to the hospital ',
         result:'',
         health:,
-        money:,
+        wealth:,
         mobility:,
     }]
 };

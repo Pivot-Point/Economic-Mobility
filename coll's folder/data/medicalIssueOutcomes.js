@@ -4,44 +4,44 @@ const question2 = {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         white:
         {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         asian: {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         nativeAmerican: {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         hispanic: {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         twoOrrMore: {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         nativePacificIslander:  {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         }
     },
 
@@ -50,44 +50,44 @@ const question2 = {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         white:
         {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         asian: {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         nativeAmerican: {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         hispanic: {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         twoOrrMore: {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         nativePacificIslander:  {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         }
     },
 
@@ -96,44 +96,44 @@ const question2 = {
         description: ,
         health: ,
         wealth: ,
-        umobility: ,
+        mobility: ,
         },
         white:
         {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         asian: {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         nativeAmerican: {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         hispanic: {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         twoOrrMore: {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         },
         nativePacificIslander:  {
             description: ,
             health: ,
             wealth: ,
-            umobility: ,
+            mobility: ,
         }
     }
 }
