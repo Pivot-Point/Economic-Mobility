@@ -29,7 +29,7 @@ function createCharacter (nameInput, ethnictyInput, backgroundInput, genderInput
         description:race.choices[i].description,
         result: race.choices[i].result,
         health: race.choices[i].health,
-        money: race.choices[i].money,
+        wealth: race.choices[i].wealth,
         mobility: race.choices[i].mobility,
 
         //gender selection

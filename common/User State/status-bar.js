@@ -7,8 +7,8 @@ export const user = {
     gender: 'male',
     region: 'south',
     wealth: 50,
-    health: 15,
-    uMobility: 130,
+    health: 40,
+    mobility: 60,
 };
 
 let healthState;
@@ -21,7 +21,7 @@ function statusBar(fubaar) {
     returnArray.push(healthState);
     wealthState = user.wealth;
     returnArray.push(wealthState);
-    mobility = user.uMobility;
+    mobility = user.mobility;
     returnArray.push(mobility);
     return returnArray;
 }

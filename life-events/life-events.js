@@ -13,7 +13,7 @@ const educationEvent = {
         description:'High School or GED',
         result:'',
         health: 0,
-        money: 0,
+        wealth : 0,
         mobility: 0,
     },
     {
@@ -21,14 +21,14 @@ const educationEvent = {
         description:'Associates Degree',
         result:'',
         health: 5,
-        money: 5,
+        wealth: 5,
         mobility: 5,
     },
     { id:'bachelors',
         description:'Bachelors Degree',
         result:'',
         health: 10,
-        money: 5,
+        wealth: 5,
         mobility: 5,
     },
     {  
@@ -36,7 +36,7 @@ const educationEvent = {
         description:'Masters Degree',
         result:'',
         health: 15,
-        money: 20,
+        wealth: 20,
         mobility: 20,
     },
     {
@@ -44,7 +44,7 @@ const educationEvent = {
         description:'Doctorate',
         result:'',
         health: 20,
-        money: 25,
+        wealth: 25,
         mobility: 50,
     },
     {
@@ -52,7 +52,7 @@ const educationEvent = {
         description:'Technical or Professional Cerficate',
         result:'',
         health:10,
-        money:25,
+        wealth:25,
         mobility:25,
     }]
 };
@@ -70,7 +70,7 @@ const trafficEvent = {
         description:'Comply with the officer',
         result:'',
         health:-5,
-        money:,
+        wealth:,
         mobility:,
     },
     {
@@ -78,14 +78,14 @@ const trafficEvent = {
         description:'Stay silent',
         result:``,
         health:0,
-        money:,
+        wealth:,
         mobility:,
     },
     {   id:'argue',
         description:'Agrue with the',
         result:'',
         health:,
-        money:,
+        wealth:,
         mobility:,
     }]
 };
@@ -102,7 +102,7 @@ const medicalEvent = {
         description:'Let it heal on it\'s own',
         result:'',
         health:-5,
-        money:,
+        wealth:,
         mobility:,
     },
     {
@@ -110,21 +110,21 @@ const medicalEvent = {
         description:' Call the ambulance to the hospital',
         result:``,
         health:0,
-        money:,
+        wealth:,
         mobility:,
     },
     {   id:'taxi',
         description:'Call a Taxi to the hospital',
         result:'',
         health:,
-        money:,
+        wealth:,
         mobility:,
     },
     {   id:'drive',
         description:'Drive yourself to the hospital',
         result:'',
         health:,
-        money:,
+        wealth:,
         mobility:,
     }]
 };
@@ -142,7 +142,7 @@ const HousingEvent = {
         description:'Find a roommate',
         result:'',
         health:-5,
-        money:,
+        wealth:,
         mobility:,
     },
     {
@@ -150,7 +150,7 @@ const HousingEvent = {
         description:' Call the ambulance to the hospital',
         result:``,
         health:0,
-        money:,
+        wealth:,
         mobility:,
     },
     {   
@@ -158,7 +158,7 @@ const HousingEvent = {
         description:'Call a Taxi to the hospital',
         result:'',
         health:,
-        money:,
+        wealth:,
         mobility:,
     },
     {   
@@ -166,7 +166,7 @@ const HousingEvent = {
         description:'Drive yourself to the hospital ',
         result:'',
         health:,
-        money:,
+        wealth:,
         mobility:,
     }]
 };
@@ -184,7 +184,7 @@ const EmployementEvent = {
         description:'Find a roommate',
         result:'',
         health:-5,
-        money:,
+        wealth:,
         mobility:,
     },
     {
@@ -192,7 +192,7 @@ const EmployementEvent = {
         description:' Call the ambulance to the hospital',
         result:``,
         health:0,
-        money:,
+        wealth:,
         mobility:,
     },
     {   
@@ -200,7 +200,7 @@ const EmployementEvent = {
         description:'Call a Taxi to the hospital',
         result:'',
         health:,
-        money:,
+        wealth:,
         mobility:,
     },
     {   
@@ -208,7 +208,7 @@ const EmployementEvent = {
         description:'Drive yourself to the hospital ',
         result:'',
         health:,
-        money:,
+        wealth:,
         mobility:,
     }]
 };
