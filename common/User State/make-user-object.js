@@ -3,53 +3,53 @@ function makeUser(formData) {
     formData.get('name');
     if (formData === 'white') {
         const user = {
-            health: 91,
-            wealth: 100,
-            mobility: 100,
+            health: -9,
+            wealth: 0,
+            mobility: 0,
         };
         return user;
     }       
     else if (formData === 'black') {
         const user = {
-            health:87,
-            wealth:80,
-            mobility:60, 
+            health:-13,
+            wealth:-20,
+            mobility:-40, 
         };
         return user;
     } else if (formData === 'asian') {
         const user = {
-            health:100,
-            wealth:100,
-            mobility:100,
+            health:0,
+            wealth:0,
+            mobility:0,
         };
         return user;
     } 
     else if (formData === 'native american') {
         const user = {
-            health:76,
-            wealth:70,
-            mobility:5 };
+            health:-24,
+            wealth:-30,
+            mobility:-50 };
         return user;
     }   
     else if (formData === 'Hispanic or Latino') {
         const user = {
-            health:96,
-            wealth:80,
-            mobility:7 };  
+            health:-4,
+            wealth:-20,
+            mobility:-7 };  
         return user;
     }
     else if (formData === 'Two or More Races') {
         const user = {
-            health:92,
-            wealth:80,
-            mobility:8 };
+            health:-8,
+            wealth:-20,
+            mobility:-8 };
         return user;
     } 
     else { //native hawaiian or pac islander
         const user = {
-            health:80,
-            wealth:75,
-            mobility:7 };
+            health:-20,
+            wealth:-25,
+            mobility:-30 };
         return user;
     }
     

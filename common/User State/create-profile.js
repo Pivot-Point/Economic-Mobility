@@ -1,6 +1,6 @@
 import characterObject from './character-object.js';
-import makeUser from './make-user-object.js';
-
+import {getUser} from './make-user-object.js';
+import {saveUser} from './api.js';
 
 // get DOM
 const userRaceForm = document.getElementById('user-race-form');

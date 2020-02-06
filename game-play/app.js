@@ -15,7 +15,7 @@ import findById from '../common/find-by-id.js';
 
 //Look at JSON function.
 
-// get query parameter from URL (this assumes that initial query parameter has been set to race)
+// get query parameter from URL (this assumes that initial query parameter has been set to 100 for all values, race is set on game page.
 //We would need to pull a specific ID from the splash page. 
 
 
