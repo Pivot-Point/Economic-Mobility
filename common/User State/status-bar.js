@@ -6,9 +6,9 @@ export const user = {
     race: 'white',
     gender: 'male',
     region: 'south',
-    wealth: 25,
-    health: 70,
-    uMobility: 80,
+    wealth: 50,
+    health: 40,
+    mobility: 60,
 };
 
 let healthState;
@@ -21,7 +21,7 @@ function statusBar(fubaar) {
     returnArray.push(healthState);
     wealthState = user.wealth;
     returnArray.push(wealthState);
-    mobility = user.uMobility;
+    mobility = user.mobility;
     returnArray.push(mobility);
     return returnArray;
 }
@@ -49,6 +49,9 @@ var myChart = new Chart(ctx, {
     },
     options: {
         responsive: false,
+        legend: {
+            display: false
+        },
         scales: {
             xAxes: [{
                 ticks: {

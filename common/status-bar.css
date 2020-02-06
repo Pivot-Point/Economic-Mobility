@@ -3,12 +3,18 @@
     max-height: 300px;
     max-width: 200px;
     position: relative;
+    border-width: 2px;
+    border-color: black;
+   
     }
     
 #barChart {
     height: 300px;
     width: 200px;
     position: absolute;
-    left: 25%;
-    top: 25%;
+    left: 78%;
+    top: 5%;
     }
+p {
+    position: right;
+}
