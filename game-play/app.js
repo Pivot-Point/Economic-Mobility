@@ -5,12 +5,20 @@ import lifeEvents from './life-events.js';
 import findById from '../common/find-by-id.js';
 import userUpdate from '../common/user-update.js';
 import { saveUser } from '../common/User State/api.js';
+import statusBar from '../common/User State/status-bar.js';
 
 // get continue button from DOM
 const continueButton = document.getElementById('continue-button');
 
 // get user from local storage
 const user = JSON.parse(localStorage.getItem('user'));
+
+let healthState;
+let wealthState;
+let mobility;
+
+// get status bar
+statusBar(user);
 
 // get form from DOM
 const form = document.querySelector('form');
@@ -39,20 +47,13 @@ form.addEventListener('submit', (e) => {
     
     // use formData object to get data for generated prompt
     const choiceId = formData.get('option');
-    console.log(lifeEventQuestion);
-
     // updateUserObject() function
     userUpdate (user, lifeEventQuestion, choiceId);
     // update user object based on choice
     saveUser(user);
     // make results appear on screen
     displayResults(choiceId, lifeEventQuestion);
-
-    
-    // renderChart() function:
-    // Will update chart based on choice (note: we will need two arrays: one for labels, the other with the corresponding scores)
 });
-
 
 
 continueButton.addEventListener('click', () => {
