@@ -2,6 +2,9 @@
 import renderQuestion from './render-question.js';
 import lifeEvents from './life-events.js';
 import findById from '../common/find-by-id.js';
+import userUpdate from '../common/user-update.js';
+import { saveUser } from '../common/User State/api.js';
+
 
 // get continue button from DOM
 const continueButton = document.getElementById('continue-button');
@@ -10,6 +13,8 @@ const continueButton = document.getElementById('continue-button');
 const eventJSON = localStorage.setItem('life-events', JSON.stringify(lifeEvents));
 
 // get user from local storage
+const user = localStorage.getItem('user');
+console.log(user);
 
 // get form from DOM
 const form = document.querySelector('form');
@@ -45,8 +50,10 @@ form.addEventListener('submit', (e) => {
     //The continue button will generate the next question.
 
     // updateUserObject() function:
+    userUpdate (user, event, choiceId);
     // update user object based on choice -- Coll and Dorje function
-
+    saveUser(user);
+    
     // make results appear on screen
     const displayResults = () => {
 
