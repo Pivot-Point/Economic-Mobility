@@ -1,4 +1,3 @@
-// import makeUser from '../common/User State/initialize-user.js'
 import { saveUser } from '../common/User State/api.js';
 
 const enterButton = document.getElementById('enter');

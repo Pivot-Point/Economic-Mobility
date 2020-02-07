@@ -1,15 +1,15 @@
-// import user from (Foobar)
-// health, wealth, u-mobility stats
-// import {user} from './make-user-object.js';
 import { getUser } from '../User State/api.js';
+// get user from local storage
 const user = getUser(); 
 
+// initiate states
 let healthState;
 let wealthState;
 let mobility;
+
+// push user's health, wealth and mobility states into array
 export default function statusBar() {
     const returnArray = [];
-    // const barChartHorizontal = document.getElementById('bar-chart-horizontal');
     healthState = user.health;
     returnArray.push(healthState);
     wealthState = user.wealth;
@@ -18,6 +18,8 @@ export default function statusBar() {
     returnArray.push(mobility);
     return returnArray;
 }
+
+// show user's states in horizontal bar chart
 statusBar(user);
 const ctx = document.getElementById('barChart').getContext('2d');
 const myChart = new Chart(ctx, {

@@ -5,5 +5,3 @@ export const newMakeUser = (formData) => ({
     wealth: 100,
     mobility: 100,
 });
-
-export default makeUser;
