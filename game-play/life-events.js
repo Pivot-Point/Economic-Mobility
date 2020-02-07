@@ -233,7 +233,8 @@ const trafficEvent = {
         wealth:1,
         mobility:1,
     },
-    {   id:'argue',
+    {   
+        id:'argue',
         description:'Agrue with the',
         result:'',
         health:1,
@@ -337,7 +338,7 @@ const employementEvent = {
     },
     {
         id:'quit',
-        description:'You get a sinking feeling that you are in a lose lose situation. If you accept, you will be breaking the law. If you decline and stay quiet, your boss will likely fire you on some trumped up violation. You decide to quit and take your chances finding another job.'
+        description:'You get a sinking feeling that you are in a lose lose situation. If you accept, you will be breaking the law. If you decline and stay quiet, your boss will likely fire you on some trumped up violation. You decide to quit and take your chances finding another job.',
         result:'',
         health:-10,
         wealth:5,
