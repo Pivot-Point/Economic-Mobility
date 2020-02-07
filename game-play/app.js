@@ -44,11 +44,11 @@ form.addEventListener('submit', (e) => {
     // use formData object to get data for generated prompt
     const choiceId = formData.get('option');
     // update user object based on choice
-    const newUserState = userUpdate (user, lifeEventQuestion, choiceId);
-    saveUser(newUserState);
+    userUpdate (user, lifeEventQuestion, choiceId);
+    saveUser(user);
 
     // get bar chart
-    statusBar(newUserState);
+    statusBar(user);
 
     // make results appear on screen
     displayResults(choiceId, lifeEventQuestion);
