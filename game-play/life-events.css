@@ -26,6 +26,12 @@ section {
     padding: 30px;
 }
 
+#life-event-image {
+    height: 100px;
+    width: auto;
+
+}
+
 /* .canvasContainer {
     max-height: 300px;
     max-width: 200px;
