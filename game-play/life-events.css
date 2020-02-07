@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgba(108, 75, 94, 1);
+    background: rgb(74, 206, 191, 1);
     display: flex;
     flex-direction: row;
     margin: 0px;
@@ -13,10 +13,13 @@ section {
     flex-direction: column;
     justify-content: space-around;
     align-items: space-around;
-    color: white;
-    padding: 30px;
+    /* color: white; */
+    padding: 50px;
 }
 
+h2 {
+    font-size: 30px;
+}
 .sidebar-container {
     background-color: rgba(255, 255, 255, 0.5);
     width: 30%;
@@ -30,28 +33,14 @@ section {
 #life-event-image {
     height: 100px;
     width: auto;
-
 }
-
-
-/* .canvasContainer {
-    max-height: 300px;
-    max-width: 200px;
-    position: flex;
-    border-width: 2px;
-    border-color: black;
-    } */
-/*     
-#barChart {
-    height: 300px;
-    width: 200px;
-    position: absolute;
-    left: 78%;
-    top: 5%;
-    } */
 
 label, button, input {
     cursor: pointer;
+}
+
+input {
+    padding: 10px;
 }
 
 form {
@@ -63,13 +52,15 @@ form {
 
 #result-section {
     display: none;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(153, 102, 132);
     padding: 10px;
-    color: black;
+    color: white;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 60%;
+    width: 90%;
+    padding: 20px 30px;
+    margin: 40px;
 }
 .button-div {
     display: flex;
@@ -77,13 +68,23 @@ form {
     align-items: center;
 }
 
+#life-event-image {
+    margin: 10px;
+}
+
 button {
     padding: 8px;
     text-transform: uppercase;
+    border-radius: 5px;
+    margin: 10px;
 }
 
 button:hover {
-    background-color: rgba(74, 206, 191, .5);
+    background-color: rgba(242, 163, 121, 1);
+}
+
+a {
+    color: rgba(108, 75, 94, 1);
 }
 
     /* RGB */
