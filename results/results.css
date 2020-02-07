@@ -33,7 +33,6 @@ h1 {
     color: white;
 }
 
-
 element.style {
     display: block;
     height: 300px;
@@ -50,25 +49,34 @@ a {
     max-height: 300px;
     max-width: 200px;
     position: center;
-   
-    }
+}
     
 #barChart {
     height: 500px;
-    width: 300px;
+    width: 375px;
     position: absolute;
     left: 2%;
     bottom: 0%;
     border-width: 2px;
     border-color: black;
-    }
+}
 
 #discussionContainer {
     position: absolute;
     left: 52%;
     right: 12%;
-    bottom: 17%;
+    bottom: 3%;
     border: 1px;
     font-family: 'Noto Sans', sans-serif;
     color: rgb(198, 111, 130, 1);
+    font-size: 70%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(198, 111, 130, 1);  
+    padding:1%;  
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
 }
