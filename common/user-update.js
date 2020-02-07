@@ -1,6 +1,4 @@
-
-//healthState, wealthState, mobility
-//we need event listener to call this function on click
+// update user state (health, wealth, mobility) based on input
 
 export default function userUpdate(user, event, choiceId) {
     if (event.id === 'race') {
