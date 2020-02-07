@@ -23,6 +23,7 @@ section {
     height: 100%;
     position: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 30px;
 }
 
