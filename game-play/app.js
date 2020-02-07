@@ -13,11 +13,7 @@ const continueButton = document.getElementById('continue-button');
 // get user from local storage
 const user = JSON.parse(localStorage.getItem('user'));
 
-let healthState;
-let wealthState;
-let mobility;
-
-// get status bar
+// get bar chart
 statusBar(user);
 
 // get form from DOM
@@ -47,10 +43,13 @@ form.addEventListener('submit', (e) => {
     
     // use formData object to get data for generated prompt
     const choiceId = formData.get('option');
-    // updateUserObject() function
-    userUpdate (user, lifeEventQuestion, choiceId);
     // update user object based on choice
-    saveUser(user);
+    const newUserState = userUpdate (user, lifeEventQuestion, choiceId);
+    saveUser(newUserState);
+
+    // get bar chart
+    statusBar(newUserState);
+
     // make results appear on screen
     displayResults(choiceId, lifeEventQuestion);
 });

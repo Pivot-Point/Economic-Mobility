@@ -17,6 +17,7 @@ export default function renderQuestion(questionObject)
     sectionContainer.append(userPromptDiv);
 
     const buttonDiv = document.createElement('div');
+    buttonDiv.classList.add('button-div');
     const questionSubmitButton = document.createElement('button');
     questionSubmitButton.id = 'question-submit-button';
 
@@ -36,8 +37,8 @@ export default function renderQuestion(questionObject)
         optionsRadio.name = 'option';
         optionsRadio.required = true;
         optionsRadio.value = choice.id;
-        optionsLabel.append(choice.id, optionsRadio);
-        sectionContainer.append(optionsLabel);
+        optionsLabel.append(optionsRadio, choice.id);
+        sectionContainer.appendChild(optionsLabel);
     }  
     
     );
