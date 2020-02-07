@@ -52,7 +52,7 @@ const myChart = new Chart(ctx, {
         },
         title: {
             display: true,
-            text: 'Character Socio-Economic Mobility'
+            text: 'Socio-Economic Mobility'
         },
         scales: {
             yAxes: [{
