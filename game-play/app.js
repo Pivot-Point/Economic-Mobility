@@ -1,5 +1,6 @@
 // import all question objects
 import renderQuestion from './render-question.js';
+import displayResults from './display-results.js';
 import lifeEvents from './life-events.js';
 import findById from '../common/find-by-id.js';
 import userUpdate from '../common/user-update.js';
@@ -8,9 +9,6 @@ import { saveUser } from '../common/User State/api.js';
 
 // get continue button from DOM
 const continueButton = document.getElementById('continue-button');
-
-//set life events object into local storage.
-const eventJSON = localStorage.setItem('life-events', JSON.stringify(lifeEvents));
 
 // get user from local storage
 const user = localStorage.getItem('user');
@@ -27,12 +25,11 @@ const lifeEventId = searchParams.get('id');
 
 // find matching id using findById function (taking in search param and array)
 const lifeEventQuestion = findById(lifeEvents, lifeEventId);
-console.log(lifeEventQuestion);
+
 // render question using lifeEvent ID
 const section = renderQuestion(lifeEventQuestion);
-
-const userRaceForm = document.getElementById('user-race-form');
-userRaceForm.appendChild(section);
+// append section to form
+form.appendChild(section);
 
 // event listener on form submission
 form.addEventListener('submit', (e) => {
@@ -46,37 +43,20 @@ form.addEventListener('submit', (e) => {
     const choiceId = formData.get('option');
 
     // push mutated user object back into local storage
-    // if there are no remaining questions, go to results page
-    //The continue button will generate the next question.
+
 
     // updateUserObject() function:
     userUpdate (user, event, choiceId);
     // update user object based on choice -- Coll and Dorje function
     saveUser(user);
-    
+
     // make results appear on screen
-    const displayResults = () => {
+    displayResults(choiceId, lifeEventQuestion);
 
-        // connect textContent of heading and paragraph to corresponding result
-
-        //<div class="results-container">
-        // <h3 id="results-header"></h3>
-        //<p id="results-description"></p>
-        //</div>
-
-        // toggle on display of results 
-        const resultsSection = document.getElementById('result-section');
-        const resultsDiv = document.getElementById('results-container');
-        const resultsHeader = document.getElementById('results-header');
-
-        // connect textContent of heading and paragraph to corresponding result
-
-        // insert corresponding image?
-
-    }
+    
     // renderChart() function:
     // Will update chart based on choice (note: we will need two arrays: one for labels, the other with the corresponding scores)
-})
+});
 
 
 
@@ -91,12 +71,8 @@ continueButton.addEventListener('click', () => {
         window.location = '../game-play/?id=' + 'traffic-event';
     } else if (lifeEventQuestion.id === 'traffic-event') {
         window.location = '../game-play/?id=' + 'arm-injury';
-    } else if (lifeEventQuestion.id === 'arm-injury') {
-        window.location = '../game-play/?id=' + 'housing-choice';
-    } else if (lifeEventQuestion.id === 'housing-choice') {
-        window.location = '../game-play/?id=' + 'employment-issue';
     } else {
-        window.location = '../results.html';
+        window.location = '../results/index.html';
     }
 }
 );
