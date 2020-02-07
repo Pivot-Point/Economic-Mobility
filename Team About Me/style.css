@@ -1,3 +1,11 @@
+/* * {
+    box-sizing: border-box;
+} */
+h1 {
+    text-align: center;
+    /* margin-right: 100 px; */
+}
+
 .container {
     position: relative;
     width: 50%;
@@ -28,7 +36,6 @@
 
 .container:hover .image {
     opacity: 0.3;
-
 }
 
 .container:hover .middle {
@@ -49,8 +56,19 @@
 
 .title {
     text-align: center;
-    font-size: ;
+    font-size: 16px;
     font-style: italic;
     padding: 10px 15px;
+    background-color: rgb(74, 206, 191, 1); ;
 
+}
+body {
+    background-color: rgba(108, 75, 94, 1);
+    /* display: flex;
+    flex-direction: row; */
+    margin: 0px;
+}
+#p1 {
+    margin-left: 50px;
+    font: red;
 }

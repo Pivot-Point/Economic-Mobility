@@ -45,12 +45,18 @@ const myChart = new Chart(ctx, {
     options: {
         responsive: false,
         legend: {
-            display: false
+            display: false},
+            title: {
+                display: true, 
+                text: 'Character Socio-Economic Mobility',
+            },
         },
         scales: {
             xAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    min: 0,
+                    max: 200
                 
                 }
             }]
