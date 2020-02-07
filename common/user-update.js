@@ -12,7 +12,6 @@ export default function userUpdate(user, event, choiceId) {
     if (event.id === 'Geographic-Environmental-Conditions') {
         user.location = choiceId;
     }
-
     const choices = event.choices;
     choices.forEach(choice => {
         if (choice.id === choiceId) {

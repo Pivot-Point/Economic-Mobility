@@ -7,7 +7,7 @@ const user = getUser();
 let healthState;
 let wealthState;
 let mobility;
-function statusBar(fubaar) {
+export default function statusBar() {
     const returnArray = [];
     // const barChartHorizontal = document.getElementById('bar-chart-horizontal');
     healthState = user.health;
@@ -23,7 +23,7 @@ const ctx = document.getElementById('barChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ['health', 'wealth', 'upward mobility'],
+        labels: ['health', 'wealth', 'mobility'],
         datasets: [{
             label: 'How is life going?',
             data: [healthState, wealthState, mobility],

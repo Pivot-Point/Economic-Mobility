@@ -6,13 +6,11 @@ import findById from '../common/find-by-id.js';
 import userUpdate from '../common/user-update.js';
 import { saveUser } from '../common/User State/api.js';
 
-
 // get continue button from DOM
 const continueButton = document.getElementById('continue-button');
 
 // get user from local storage
-const user = localStorage.getItem('user');
-console.log(user);
+const user = JSON.parse(localStorage.getItem('user'));
 
 // get form from DOM
 const form = document.querySelector('form');
@@ -41,15 +39,12 @@ form.addEventListener('submit', (e) => {
     
     // use formData object to get data for generated prompt
     const choiceId = formData.get('option');
+    console.log(lifeEventQuestion);
 
-    // push mutated user object back into local storage
-
-
-    // updateUserObject() function:
-    userUpdate (user, event, choiceId);
-    // update user object based on choice -- Coll and Dorje function
+    // updateUserObject() function
+    userUpdate (user, lifeEventQuestion, choiceId);
+    // update user object based on choice
     saveUser(user);
-
     // make results appear on screen
     displayResults(choiceId, lifeEventQuestion);
 
