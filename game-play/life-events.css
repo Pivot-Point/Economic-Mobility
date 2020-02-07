@@ -2,3 +2,23 @@
     display: none;
 
 }
+
+.canvasContainer {
+    max-height: 300px;
+    max-width: 200px;
+    position: relative;
+    border-width: 2px;
+    border-color: black;
+   
+    }
+    
+#barChart {
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    left: 78%;
+    top: 5%;
+    }
+p {
+    position: right;
+}

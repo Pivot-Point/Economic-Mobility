@@ -3,7 +3,7 @@ export default function findById(array, id) {
         const item = array[i];
         if (item.id === id) {
             return item;
-        }
+        }   
     }
 
     return null;
