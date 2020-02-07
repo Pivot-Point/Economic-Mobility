@@ -1,0 +1,23 @@
+
+body {
+
+    display: flex
+    
+}
+
+.canvasContainer {
+    max-height: 300px;
+    max-width: 200px;
+    position: center;
+    border-width: 2px;
+    border-color: black;
+   
+    }
+    
+#barChart {
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    left: 78%;
+    top: 5%;
+    }
