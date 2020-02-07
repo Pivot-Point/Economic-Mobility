@@ -30,6 +30,7 @@ const lifeEventQuestion = findById(lifeEvents, lifeEventId);
 
 // render question using lifeEvent ID
 const section = renderQuestion(lifeEventQuestion);
+
 // append section to form
 form.appendChild(section);
 
@@ -43,8 +44,11 @@ form.addEventListener('submit', (e) => {
     
     // use formData object to get data for generated prompt
     const choiceId = formData.get('option');
+
     // update user object based on choice
     userUpdate (user, lifeEventQuestion, choiceId);
+
+    // save user in local storage
     saveUser(user);
 
     // get bar chart
@@ -52,6 +56,11 @@ form.addEventListener('submit', (e) => {
 
     // make results appear on screen
     displayResults(choiceId, lifeEventQuestion);
+
+    // make button disappear
+    const questionSubmitButton = document.getElementById('question-submit-button');
+    questionSubmitButton.style.display = 'none';
+
 });
 
 

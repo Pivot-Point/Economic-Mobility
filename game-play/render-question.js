@@ -1,34 +1,29 @@
 export default function renderQuestion(questionObject) 
 {
-    // render section for question and options
+    // render section containing life event questions
     const sectionContainer = document.createElement('section');
 
     const userPromptDiv = document.createElement('div');
     userPromptDiv.classList.add('user-prompt');
 
-    const creationTitle = document.createElement('h3');
-
+    const creationTitle = document.createElement('h2');
     creationTitle.textContent = questionObject.title;
 
     const questionDescription = document.createElement('p');
-    
     questionDescription.textContent = questionObject.description; 
 
     userPromptDiv.append(creationTitle, questionDescription);
     sectionContainer.append(userPromptDiv);
-
     const buttonDiv = document.createElement('div');
     buttonDiv.classList.add('button-div');
+
     const questionSubmitButton = document.createElement('button');
     questionSubmitButton.id = 'question-submit-button';
-
     questionSubmitButton.textContent = 'Submit';
-
     buttonDiv.appendChild(questionSubmitButton); 
 
     const optionsDiv = document.createElement('div');
     optionsDiv.classList.add('options');
-
     
     // iterate through choices
     questionObject.choices.forEach(choice => {
