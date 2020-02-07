@@ -64,8 +64,8 @@ continueButton.addEventListener('click', () => {
     } else if (lifeEventQuestion.id === 'Geographic-Environmental-Conditions') {
         window.location = '../game-play/?id=' + 'EducationEvent';
     } else if (lifeEventQuestion.id === 'EducationEvent') {
-        window.location = '../game-play/?id=' + 'traffic-event';
-    } else if (lifeEventQuestion.id === 'employment-issue') {
+        window.location = '../game-play/?id=' + 'employement-issue';
+    } else if (lifeEventQuestion.id === 'employement-issue') {    
         window.location = '../results/index.html';
     }
 }
