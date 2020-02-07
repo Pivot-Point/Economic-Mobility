@@ -62,3 +62,13 @@ a {
     border-width: 2px;
     border-color: black;
     }
+
+#discussionContainer {
+    position: absolute;
+    left: 52%;
+    right: 12%;
+    bottom: 17%;
+    border: 1px;
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(198, 111, 130, 1);
+}
