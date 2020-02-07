@@ -23,7 +23,7 @@ const ethnicityButton = document.getElementById('race')
 // create function for character creation page submit button
 
 function createCharacter (nameInput, ethnictyInput, backgroundInput, genderInput) {
-    const charcterObject = {
+    const characterObject = {
         //ethnicity selection
         id: race.choices[i].id,
         description:race.choices[i].description,
