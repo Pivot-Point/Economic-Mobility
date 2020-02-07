@@ -46,7 +46,7 @@ a {
 }
 
 .canvasContainer {
-    max-height: 400px;
+    max-height: 300px;
     max-width: 200px;
     position: center;
 }
@@ -55,7 +55,7 @@ a {
     height: 500px;
     width: 375px;
     position: absolute;
-    left: 2%;
+    left: 10%;
     bottom: 0%;
     border-width: 2px;
     border-color: black;
@@ -64,12 +64,12 @@ a {
 #discussionContainer {
     position: absolute;
     left: 52%;
-    right: 12%;
+    right: 10%;
     bottom: 3%;
     border: 1px;
     font-family: 'Noto Sans', sans-serif;
     color: rgb(198, 111, 130, 1);
-    font-size: 70%;
+    font-size: 80%;
     border-style: solid;
     border-width: 3px;
     border-color: rgb(198, 111, 130, 1);  
