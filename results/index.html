@@ -6,22 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="results.css"></link>
-    <title>Home</title>
+    <title>Results</title>
 </head>
-
-<nav>
-    <a href="../home/splash.html">Home</a>
-</nav>
 <body>
-    <div>
-        <div id="barGraph" class="canvasContainer"></div>
-    <canvas id="barChart" width="300" height="200"></canvas>
-</div>
-    <p>Your Life Status</p>
-
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-<script type="module" src="../results/results.js"> </script>
-    
+<header>
+    <h1>Results</h1>
+    <nav id="nav-bar">
+        <a href="../home/splash.html">Home</a>
+    </nav>
+</header>
+    <main> 
+        <div>
+            <div id="barGraph" class="canvasContainer"></div>
+            <canvas id="barChart" width="320" height="340"></canvas>
+        </div>
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script type="module" src="../results/results.js"> </script>
+        
+    </main>
 </body>
 </html>

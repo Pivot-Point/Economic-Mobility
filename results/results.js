@@ -23,16 +23,18 @@ function statusBar() {
 statusBar(user);
 const ctx = document.getElementById('barChart').getContext('2d');
 const myChart = new Chart(ctx, {
-    type: 'horizontalBar',
+    type: 'bar',
+    label: 'Level of Success',
     data: {
-        labels: ['health', 'wealth', 'mobility'],
+        labels: ['Health', 'Wealth', 'Mobility'],
         datasets: [{
-            label: 'How is life going?',
+            label: 'Level of Success',
+            fill: false, 
             data: [healthState, wealthState, mobility],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
+                'rgba(56, 162, 255, 0.2)',
+                'rgba(108, 75, 94, 0.2)',
+                'rgba(198, 111, 130, 0.2)',
             ],
             borderColor: [
                 'rgba(255, 99, 132, 1)',
@@ -42,15 +44,22 @@ const myChart = new Chart(ctx, {
             borderWidth: 2 
         }]
     },
+    
     options: {
         responsive: false,
         legend: {
-            display: false
+            display: false,
+        },
+        title: {
+            display: true,
+            text: 'Character Socio-Economic Mobility'
         },
         scales: {
-            xAxes: [{
+            yAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    min: 0,
+                    max: 250,
                 
                 }
             }]
