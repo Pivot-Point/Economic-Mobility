@@ -45,8 +45,7 @@ const myChart = new Chart(ctx, {
     options: {
         responsive: false,
         legend: {
-
-            display: false},
+            display: false },
         title: {
             display: true, 
             text: 'Character Socio-Economic Mobility',
