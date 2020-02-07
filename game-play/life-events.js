@@ -277,7 +277,7 @@ const medicalEvent = {
         mobility:1,
     }]
 };
-const HousingEvent = {
+const housingEvent = {
     id:'housing-choice',
     title:'',
     image:'',
@@ -315,7 +315,7 @@ const HousingEvent = {
         mobility:1,
     }]
 };
-const EmployementEvent = {
+const employementEvent = {
     id:'employement-issue',
     title:'',
     image:'',
@@ -360,7 +360,7 @@ const lifeEvents = [
     educationEvent,
     trafficEvent,
     medicalEvent,
-    // housingEvent,
-    // employementEvent,
+    housingEvent,
+    employementEvent,
 ];
 export default lifeEvents;
