@@ -1,4 +1,7 @@
 //Race// 
+- Health
+ - Wealth
+https://www.thebalance.com/racial-wealth-gap-in-united-states-4169678
 
 //Gender Idenity//
 

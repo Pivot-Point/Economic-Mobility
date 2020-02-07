@@ -3,7 +3,7 @@ const race = {
 
     id: 'race',
     title: 'The Human Race',
-    image:'',
+    image:'Rosalie',
     description:`
     Race and ethnicity are socially constructed categories that have tangible effects on the lives of individuals who are defined by how one perceives one's self and how one is perceived by others. It is important to acknowledge the social construction (i.e., created from prevailing social perceptions, historical policies, and practices) of the concepts of race and ethnicity because it has implications for how measures of race have been used and changed over time. Furthermore, the concept of race is complex, with a rich history of scientific and philosophical debate as to the nature of race (James, 2016). Racial and ethnic disparities are arguably the most obstinate inequities in health over time, despite the many strides that have been made to improve health in the United States. Moreover, race and ethnicity are extremely salient factors when examining health inequity (Bell and Lee, 2011; Smedley et al., 2008; Williams et al., 2010). Therefore, solutions for health equity need to take into account the social, political, and historical context of race and ethnicity in this country.
 
@@ -161,7 +161,7 @@ const environmentalConditions = {
 const educationEvent = {
     id:'EducationEvent',
     title:'Degrees of Education',
-    image:'',
+    image:'Will',
     description:`Research shows that the greatest single correlation of high income is the education level of one's parents.
     The Fed study showed that income, earnings, and wealth increased with education levels.`,
     choices:[{
@@ -215,7 +215,7 @@ const educationEvent = {
 const trafficEvent = {
     id:'traffic-event',
     title:'Traffic Stop',
-    image:'',
+    image:'Rosalie',
     description:`You are driving down the highway. You are driving the speed limit, your car is fully functional and your registration, insurance, and drivers liscense are valid. You are preparing to take the next exit, when you look in your rear view mirror and notice that a police officer is following you. The officer, turns on their lights and sirens and in accordance with the law you pull your car over to the side of the road as quickly as you can and in a safe location. The officer approaches your vehicle and you roll down the window. The officer, tells you that you were speeding. How do you respond?`,
     choices:[{
         id:'comply',
@@ -245,7 +245,7 @@ const trafficEvent = {
 const medicalEvent = {
     id:'arm-injury',
     title:'',
-    image:'',
+    image:'Will',
     description:`You were walking and tripped on a curb. You fall and break your arm. The break is serious and you need immediate medical attention. What do you do?`,
     choices:[{
         id:'heal',
