@@ -56,6 +56,7 @@ form.addEventListener('submit', (e) => {
 
 
 continueButton.addEventListener('click', () => {
+    // direct window to next prompt using query paramz
     if (lifeEventQuestion.id === 'race') {
         window.location = '../game-play/?id=' + 'Gender';
     } else if (lifeEventQuestion.id === 'Gender') {
@@ -64,9 +65,7 @@ continueButton.addEventListener('click', () => {
         window.location = '../game-play/?id=' + 'EducationEvent';
     } else if (lifeEventQuestion.id === 'EducationEvent') {
         window.location = '../game-play/?id=' + 'traffic-event';
-    } else if (lifeEventQuestion.id === 'traffic-event') {
-        window.location = '../game-play/?id=' + 'arm-injury';
-    } else {
+    } else if (lifeEventQuestion.id === 'employment-issue') {
         window.location = '../results/index.html';
     }
 }

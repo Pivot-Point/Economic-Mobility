@@ -1,6 +1,6 @@
 export default function renderQuestion(questionObject) 
 {
-    // create dynamically rendered section to append to 
+    // render section for question and options
     const sectionContainer = document.createElement('section');
 
     const userPromptDiv = document.createElement('div');
