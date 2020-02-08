@@ -1,22 +1,15 @@
-// import user from (Foobar)
-// health, wealth, u-mobility stats
-// import {user} from './make-user-object.js';
-export const user = {
-    name: 'john',
-    race: 'white',
-    gender: 'male',
-    region: 'south',
-    wealth: 50,
-    health: 40,
-    mobility: 60,
-};
+import { getUser } from '../User State/api.js';
+// get user from local storage
+const user = getUser(); 
 
+// initiate states
 let healthState;
 let wealthState;
 let mobility;
-function statusBar(fubaar) {
+
+// push user's health, wealth and mobility states into array
+export default function statusBar() {
     const returnArray = [];
-    // const barChartHorizontal = document.getElementById('bar-chart-horizontal');
     healthState = user.health;
     returnArray.push(healthState);
     wealthState = user.wealth;
@@ -25,12 +18,14 @@ function statusBar(fubaar) {
     returnArray.push(mobility);
     return returnArray;
 }
+
+// show user's states in horizontal bar chart
 statusBar(user);
-var ctx = document.getElementById('barChart').getContext('2d');
-var myChart = new Chart(ctx, {
+const ctx = document.getElementById('barChart').getContext('2d');
+const myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ['health', 'wealth', 'upward mobility'],
+        labels: ['health', 'wealth', 'mobility'],
         datasets: [{
             label: 'How is life going?',
             data: [healthState, wealthState, mobility],
@@ -50,17 +45,21 @@ var myChart = new Chart(ctx, {
     options: {
         responsive: false,
         legend: {
-            display: false
+            display: false,
+        },
+        title: {
+            display: true,
+            text: 'Socio-Economic Mobility'
         },
         scales: {
             xAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    min: 0,
+                    max: 150,
                 
                 }
             }]
         }
     }
 });
-
-

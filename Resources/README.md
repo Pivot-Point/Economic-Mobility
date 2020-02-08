@@ -6,6 +6,10 @@
 
 //Education//
 
+https://www.bls.gov/careeroutlook/2018/data-on-display/education-pays.htm
+
+https://www.bls.gov/emp/chart-unemployment-earnings-education.htm
+
 //Housing//
 
 https://prrac.org/newsletters/may-aug2019.pdf

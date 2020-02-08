@@ -1,7 +1,23 @@
+// update user state (health, wealth, mobility) based on input
 
-//healthState, wealthState, mobility
-export default function userUpdate(user, event) {
-    user.wealth = user.wealth + event.wealth;
-    user.health = user.health + event.health;
-    user.mobility = user.mobility + event.mobility; return user;  
+export default function userUpdate(user, event, choiceId) {
+    if (event.id === 'race') {
+        user.race = choiceId;
+    }
+    if (event.id === 'Gender') {
+        user.gender = choiceId;
+    }
+    if (event.id === 'Geographic-Environmental-Conditions') {
+        user.location = choiceId;
+    }
+    const choices = event.choices;
+    choices.forEach(choice => {
+        if (choice.id === choiceId) {
+            user.wealth = user.wealth + choice.wealth;
+            user.health = user.health + choice.health;
+            user.mobility = user.mobility + choice.mobility;
+        }
+    });
+
+    return user;  
 }

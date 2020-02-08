@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: rgb(74, 206, 191, 1);
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
+    /* color: white; */
+    padding: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+.sidebar-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 30%;
+    height: 100%;
+    position: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+#life-event-image {
+    height: 100px;
+    width: auto;
+}
+
+label, button, input {
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+#result-section {
+    display: none;
+    background-color: rgb(153, 102, 132);
+    padding: 10px;
+    color: white;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    padding: 20px 30px;
+    margin: 40px;
+}
+.button-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#life-event-image {
+    margin: 10px;
+}
+
+button {
+    padding: 8px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: rgba(242, 163, 121, 1);
+}
+
+a {
+    color: rgba(108, 75, 94, 1);
+}
+
+    /* RGB */
+$color1: rgba(198, 111, 130, 1);
+$color2: rgba(242, 163, 121, 1);
+$color3: rgba(56, 162, 255, 1);
+$color4: rgba(108, 75, 94, 1);
+$color5: rgba(74, 206, 191, 1);

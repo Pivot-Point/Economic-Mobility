@@ -1,32 +1,29 @@
-export function renderQuestion(questionObject) 
+export default function renderQuestion(questionObject) 
 {
+    // render section containing life event questions
     const sectionContainer = document.createElement('section');
 
     const userPromptDiv = document.createElement('div');
     userPromptDiv.classList.add('user-prompt');
 
-    const creationTitle = document.createElement('h3');
-
+    const creationTitle = document.createElement('h2');
     creationTitle.textContent = questionObject.title;
 
     const questionDescription = document.createElement('p');
-    
     questionDescription.textContent = questionObject.description; 
 
     userPromptDiv.append(creationTitle, questionDescription);
     sectionContainer.append(userPromptDiv);
-
     const buttonDiv = document.createElement('div');
+    buttonDiv.classList.add('button-div');
+
     const questionSubmitButton = document.createElement('button');
     questionSubmitButton.id = 'question-submit-button';
-
     questionSubmitButton.textContent = 'Submit';
-
     buttonDiv.appendChild(questionSubmitButton); 
 
     const optionsDiv = document.createElement('div');
     optionsDiv.classList.add('options');
-
     
     // iterate through choices
     questionObject.choices.forEach(choice => {
@@ -36,8 +33,8 @@ export function renderQuestion(questionObject)
         optionsRadio.name = 'option';
         optionsRadio.required = true;
         optionsRadio.value = choice.id;
-        optionsLabel.append(choice.id, optionsRadio);
-        sectionContainer.append(optionsLabel);
+        optionsLabel.append(optionsRadio, choice.id);
+        sectionContainer.appendChild(optionsLabel);
     }  
     
     );
@@ -48,21 +45,3 @@ export function renderQuestion(questionObject)
     return sectionContainer;
 }
 
-export function renderResults(questionObject) 
-{
-    questionObject.choices.forEach(choice =>
-      {
-        const resultsSection = document.getElementById('result-section');
-        const resultsDiv = document.getElementById('results-container');
-
-
-      }  )
-    const resultsSection = document.getElementById('result-section');
-    const resultsDiv = document.getElementById('results-container');
-
-    const resultsHeader = document.createElement('h3');
-    const resultsDescription = document.createElement('p');
-
-resultsSection.append(resultsDiv);
-resultsDiv.append(resultsHeader);
-resultsHeader.append(resultsDescription);
