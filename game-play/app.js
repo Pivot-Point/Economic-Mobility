@@ -63,7 +63,7 @@ form.addEventListener('submit', (e) => {
 // get index of question in array
 let questionIndex = lifeEvents.indexOf(lifeEventQuestion);
 
-// incremement index and use corresponding id to direct window to next prompt using query params
+// incremement index and use corresponding id to direct window to next prompt
 continueButton.addEventListener('click', () => {
     questionIndex++;
     if (questionIndex < lifeEvents.length) {

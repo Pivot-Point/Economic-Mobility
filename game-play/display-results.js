@@ -11,6 +11,6 @@ export default function displayResults(choiceId, lifeEvent) {
     const individualResult = document.getElementById('individual-result-text');
     lifeEventImage.src = `../assets/diversity-images/${lifeEvent.image}`;
     resultsHeader.textContent = `You selected: ${choiceId}`;
-    resultsDescription.textContent = choice.description;
     individualResult.textContent = choice.result;
+    resultsDescription.textContent = choice.description;
 }

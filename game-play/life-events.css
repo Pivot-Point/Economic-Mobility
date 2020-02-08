@@ -8,12 +8,16 @@ body {
     margin: 0px;
 }
 
-section {
+form > section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: space-around;
     padding: 50px;
+}
+
+section > div {
+    margin: 10px;
 }
 
 h2 {
@@ -23,31 +27,52 @@ h2 {
 .sidebar-container {
     background-color: rgba(255, 255, 255, 0.5);
     width: 30%;
-    height: 100%;
-    position: flex;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px 100px 40px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #life-event-image {
-    height: 100px;
+    height: 120px;
     width: auto;
 }
 
-label, button, input {
-    cursor: pointer;
+input:checked + span {
+    color: rgb(133, 48, 97);
 }
-
 input {
-    padding: 10px;
+    display: none;
 }
 
-form {
+label {
+    margin: 5px;
+}
+
+aside {
+    color: rgb(78, 78, 78);
+    font-size: smaller;
+}
+
+.options {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: space-around;
+    padding: 0;
+}
+
+.options label {
+    width: 100px;
+    text-align: center;
 }
 
 #result-section {
@@ -59,24 +84,23 @@ form {
     justify-content: space-around;
     align-items: center;
     width: 90%;
-    padding: 20px 30px;
-    margin: 40px;
+    margin: 20px 40px;
 }
+
+#result-section div {
+    margin: 15px;
+}
+
 .button-div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#life-event-image {
-    margin: 10px;
-}
-
 button {
     padding: 8px;
     text-transform: uppercase;
     border-radius: 5px;
-    margin: 10px;
 }
 
 button:hover {
@@ -86,10 +110,3 @@ button:hover {
 a {
     color: rgba(108, 75, 94, 1);
 }
-
-    /* RGB */
-$color1: rgba(198, 111, 130, 1);
-$color2: rgba(242, 163, 121, 1);
-$color3: rgba(56, 162, 255, 1);
-$color4: rgba(108, 75, 94, 1);
-$color5: rgba(74, 206, 191, 1);
