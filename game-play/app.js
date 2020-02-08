@@ -5,16 +5,16 @@ import lifeEvents from './life-events.js';
 import findById from '../common/find-by-id.js';
 import userUpdate from '../common/user-update.js';
 import { saveUser } from '../common/User State/api.js';
-import statusBar from '../common/User State/status-bar.js';
+import { myChart } from '../common/User State/status-bar.js';
+
+// display chart
+myChart;
 
 // get continue button from DOM
 const continueButton = document.getElementById('continue-button');
 
 // get user from local storage
 const user = JSON.parse(localStorage.getItem('user'));
-
-// get bar chart
-statusBar(user);
 
 // get form from DOM
 const form = document.querySelector('form');
@@ -28,11 +28,11 @@ const lifeEventId = searchParams.get('id');
 // find matching id using findById function (taking in search param and array)
 const lifeEventQuestion = findById(lifeEvents, lifeEventId);
 
-// render question using lifeEvent ID
-const section = renderQuestion(lifeEventQuestion);
+// render prompt
+const promptSection = renderQuestion(lifeEventQuestion);
 
-// append section to form
-form.appendChild(section);
+// append prompt to form
+form.appendChild(promptSection);
 
 // event listener on form submission
 form.addEventListener('submit', (e) => {
@@ -41,18 +41,15 @@ form.addEventListener('submit', (e) => {
 
     // get formData object
     const formData = new FormData(form);
-    
+
     // use formData object to get data for generated prompt
     const choiceId = formData.get('option');
 
     // update user object based on choice
-    userUpdate (user, lifeEventQuestion, choiceId);
+    userUpdate(user, lifeEventQuestion, choiceId);
 
     // save user in local storage
     saveUser(user);
-
-    // get bar chart
-    statusBar(user);
 
     // make results appear on screen
     displayResults(choiceId, lifeEventQuestion);
@@ -63,21 +60,15 @@ form.addEventListener('submit', (e) => {
 
 });
 
+// get index of question in array
+let questionIndex = lifeEvents.indexOf(lifeEventQuestion);
 
+// incremement index and use corresponding id to direct window to next prompt using query params
 continueButton.addEventListener('click', () => {
-    // direct window to next prompt using query paramz
-    if (lifeEventQuestion.id === 'race') {
-        window.location = '../game-play/?id=' + 'Gender';
-    } else if (lifeEventQuestion.id === 'Gender') {
-        window.location = '../game-play/?id=' + 'Geographic-Environmental-Conditions';
-    } else if (lifeEventQuestion.id === 'Geographic-Environmental-Conditions') {
-        window.location = '../game-play/?id=' + 'EducationEvent';
-    } else if (lifeEventQuestion.id === 'EducationEvent') {
-        window.location = '../game-play/?id=' + 'employement-issue';
-    } else if (lifeEventQuestion.id === 'employement-issue') {    
+    questionIndex++;
+    if (questionIndex < lifeEvents.length) {
+        window.location = '../game-play/?id=' + lifeEvents[questionIndex].id;
+    } else {
         window.location = '../results/index.html';
     }
-}
-);
-
-
+});

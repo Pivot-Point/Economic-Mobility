@@ -36,7 +36,6 @@ export default function renderQuestion(questionObject)
         optionsLabel.append(optionsRadio, choice.id);
         sectionContainer.appendChild(optionsLabel);
     }  
-    
     );
     
     sectionContainer.appendChild(optionsDiv);
