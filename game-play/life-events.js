@@ -48,15 +48,7 @@ const race = {
         mobility: -25,
     },
     {
-        id: 'Two or More Races',
-        description: 'This applies only to those who are Non-Hispanic or Latino.',
-        result: '',
-        health: -8,
-        wealth: -20,
-        mobility: -20,
-    },
-    {
-        id: 'Native Hawaiian or Other Pacific Islander',
+        id: 'Pacific Islander',
         description: 'A person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands; has no Hispanic or Latino origins.',
         result: '',
         health: -20,

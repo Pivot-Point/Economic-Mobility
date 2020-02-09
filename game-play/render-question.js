@@ -29,14 +29,15 @@ export default function renderQuestion(questionObject)
     questionObject.choices.forEach(choice => {
         const optionsLabel = document.createElement('label');
         const optionsRadio = document.createElement('input');
+        const optionsSpan = document.createElement('span');
         optionsRadio.type = 'radio';
         optionsRadio.name = 'option';
         optionsRadio.required = true;
         optionsRadio.value = choice.id;
-        optionsLabel.append(optionsRadio, choice.id);
-        sectionContainer.appendChild(optionsLabel);
+        optionsSpan.textContent = choice.id;
+        optionsLabel.append(optionsRadio, optionsSpan);
+        optionsDiv.appendChild(optionsLabel);
     }  
-    
     );
     
     sectionContainer.appendChild(optionsDiv);
@@ -44,5 +45,4 @@ export default function renderQuestion(questionObject)
     
     return sectionContainer;
 }
-
 
