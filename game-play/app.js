@@ -6,6 +6,7 @@ import findById from '../common/find-by-id.js';
 import userUpdate from '../common/user-update.js';
 import { saveUser } from '../common/User State/api.js';
 import { myChart } from '../common/User State/status-bar.js';
+import determineNextQuestion from './determine-next-question.js';
 
 // display chart
 myChart;
@@ -60,14 +61,11 @@ form.addEventListener('submit', (e) => {
 
 });
 
-// get index of question in array
-let questionIndex = lifeEvents.indexOf(lifeEventQuestion);
-
 // incremement index and use corresponding id to direct window to next prompt
 continueButton.addEventListener('click', () => {
-    questionIndex++;
-    if (questionIndex < lifeEvents.length) {
-        window.location = '../game-play/?id=' + lifeEvents[questionIndex].id;
+    const nextQuestion = determineNextQuestion(lifeEvents, lifeEventQuestion);
+    if (nextQuestion) {
+        window.location = nextQuestion;
     } else {
         window.location = '../results/index.html';
     }
