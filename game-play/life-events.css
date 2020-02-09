@@ -33,7 +33,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 40px 100px 40px;
+    padding: 50px 40px 90px 40px;
 }
 
 nav {
@@ -47,9 +47,13 @@ nav {
     width: auto;
 }
 
+input:hover + span {
+    color: rgb(199, 98, 44)
+}
 input:checked + span {
     color: rgb(133, 48, 97);
 }
+
 input {
     display: none;
 }
@@ -67,7 +71,6 @@ aside {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0;
 }
 
 .options label {
@@ -85,10 +88,6 @@ aside {
     align-items: center;
     width: 90%;
     margin: 20px 40px;
-}
-
-#result-section div {
-    margin: 15px;
 }
 
 .button-div {
@@ -109,4 +108,5 @@ button:hover {
 
 a {
     color: rgba(108, 75, 94, 1);
+    padding: 8px;
 }
