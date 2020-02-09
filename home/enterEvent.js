@@ -15,7 +15,7 @@ enterButton.addEventListener('click', (e) => {
         wealth: 100,
         mobility: 100 };
     saveUser(userObject);
-    window.location = '../game-play/?id=race';
+    window.location = './game-play/?id=race';
 });
 
 export default enterButton;
