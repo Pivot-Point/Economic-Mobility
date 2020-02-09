@@ -1,6 +1,5 @@
 const startButton = document.getElementById('start-button');
 
-startButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.location.pathname = '/Economic-Mobility/game-play/?id=race';
+startButton.addEventListener('click', () => {
+    window.location = './game-play/?id=race';
 });
