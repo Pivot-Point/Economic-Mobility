@@ -18,7 +18,7 @@ const race = {
     {
         id: 'Black',
         description: 'A person having origins in any of the black racial groups of Africa; has no Hispanic or Latino origins.',
-        result: '. The Economic Policy Institute reported that 25% of black households have zero or negative net worth. Only 10% of white families are that poor. Since so many black families own nothing or are in debt, it drags down average wealth for the entire race. As a result, black families have $5.04 in net worth for every $100 held by white families.',
+        result: 'The Economic Policy Institute reported that 25% of black households have zero or negative net worth. Only 10% of white families are that poor. Since so many black families own nothing or are in debt, it drags down average wealth for the entire race. As a result, black families have $5.04 in net worth for every $100 held by white families.',
         health: -13,
         wealth: -20,
         mobility: -40,
@@ -48,15 +48,7 @@ const race = {
         mobility: -25,
     },
     {
-        id: 'Two or More Races',
-        description: 'This applies only to those who are Non-Hispanic or Latino.',
-        result: '',
-        health: -8,
-        wealth: -20,
-        mobility: -20,
-    },
-    {
-        id: 'Native Hawaiian or Other Pacific Islander',
+        id: 'Pacific Islander',
         description: 'A person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands; has no Hispanic or Latino origins.',
         result: '',
         health: -20,

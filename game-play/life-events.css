@@ -2,75 +2,94 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgba(108, 75, 94, 1);
+    background: rgb(74, 206, 191, 1);
     display: flex;
     flex-direction: row;
-    margin: 0px;
+    margin: 0;
 }
 
-section {
+form > section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: space-around;
-    color: white;
-    padding: 30px;
+    padding: 20px 50px;
+}
+
+section > div {
+    margin: 10px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 .sidebar-container {
     background-color: rgba(255, 255, 255, 0.5);
     width: 30%;
-    height: 100%;
-    position: flex;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px 90px 40px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #life-event-image {
-    height: 100px;
+    height: 120px;
     width: auto;
-
 }
 
-
-/* .canvasContainer {
-    max-height: 300px;
-    max-width: 200px;
-    position: flex;
-    border-width: 2px;
-    border-color: black;
-    } */
-/*     
-#barChart {
-    height: 300px;
-    width: 200px;
-    position: absolute;
-    left: 78%;
-    top: 5%;
-    } */
-
-label, button, input {
-    cursor: pointer;
+input:hover + span {
+    color: rgb(199, 98, 44)
+}
+input:checked + span {
+    color: rgb(133, 48, 97);
 }
 
-form {
+input {
+    display: none;
+}
+
+label {
+    margin: 5px;
+}
+
+aside {
+    color: rgb(78, 78, 78);
+    font-size: smaller;
+}
+
+.options {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: space-around;
+}
+
+.options label {
+    width: 100px;
+    text-align: center;
 }
 
 #result-section {
     display: none;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(153, 102, 132);
     padding: 10px;
-    color: black;
+    color: white;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 60%;
+    width: 90%;
+    margin: 20px 40px;
 }
+
 .button-div {
     display: flex;
     flex-direction: column;
@@ -80,15 +99,14 @@ form {
 button {
     padding: 8px;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: rgba(74, 206, 191, .5);
+    background-color: rgba(242, 163, 121, 1);
 }
 
-    /* RGB */
-$color1: rgba(198, 111, 130, 1);
-$color2: rgba(242, 163, 121, 1);
-$color3: rgba(56, 162, 255, 1);
-$color4: rgba(108, 75, 94, 1);
-$color5: rgba(74, 206, 191, 1);
+a {
+    color: rgba(108, 75, 94, 1);
+    padding: 8px;
+}

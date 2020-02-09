@@ -5,3 +5,7 @@ h1 {
 body {
     font-family: 'Noto Sans', sans-serif;
 }
+
+label, button, input {
+    cursor: pointer;
+}

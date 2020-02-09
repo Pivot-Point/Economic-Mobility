@@ -1,5 +1,4 @@
 import userUpdate from '../common/user-update.js';
-// import example from '../src/example.js';
 
 const test = QUnit.test;
 

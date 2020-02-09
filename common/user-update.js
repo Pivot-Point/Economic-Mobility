@@ -1,6 +1,5 @@
-// update user state (health, wealth, mobility) based on input
-
 export default function userUpdate(user, event, choiceId) {
+    // add race, gender and location selections to user object
     if (event.id === 'race') {
         user.race = choiceId;
     }
@@ -10,6 +9,7 @@ export default function userUpdate(user, event, choiceId) {
     if (event.id === 'Geographic-Environmental-Conditions') {
         user.location = choiceId;
     }
+    // update user state (health, wealth, mobility) based on input
     const choices = event.choices;
     choices.forEach(choice => {
         if (choice.id === choiceId) {
