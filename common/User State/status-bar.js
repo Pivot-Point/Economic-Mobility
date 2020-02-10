@@ -7,7 +7,7 @@ const user = getUser();
 // pass user object into array and store as variable
 const userStats = statusArray(user);
 
-// show user's states in horizontal bar chart
+// show user's states in bar chart
 const ctx = document.getElementById('barChart').getContext('2d');
 
 // use query params to determine chart direction
