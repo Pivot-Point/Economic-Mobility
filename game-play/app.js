@@ -63,10 +63,6 @@ form.addEventListener('submit', (e) => {
 
 // incremement index and use corresponding id to direct window to next prompt
 continueButton.addEventListener('click', () => {
-    const nextQuestion = determineNextQuestion(lifeEvents, lifeEventQuestion);
-    if (nextQuestion) {
-        window.location = nextQuestion;
-    } else {
-        window.location = '../results/index.html';
-    }
+    // could be a refactored as a fallback
+    window.location = determineNextQuestion(lifeEvents, lifeEventQuestion) || '../results/index.html';
 });
