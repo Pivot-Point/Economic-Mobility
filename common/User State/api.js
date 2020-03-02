@@ -4,6 +4,7 @@ export function saveUser(user) {
 }
 export function getUser() {
     const json = localStorage.getItem('user');
+    // nice sanity check!
     if (!json) return null;
     const user = JSON.parse(json);
     return user;

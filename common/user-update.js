@@ -10,12 +10,16 @@ export default function userUpdate(user, event, choiceId) {
         user.location = choiceId;
     }
     // update user state (health, wealth, mobility) based on input
-    const choices = event.choices;
-    choices.forEach(choice => {
-        if (choice.id === choiceId) {
-            user.wealth = user.wealth + choice.wealth;
-            user.health = user.health + choice.health;
-            user.mobility = user.mobility + choice.mobility;
+    event.choices.forEach(({ 
+        id, 
+        wealth, 
+        health, 
+        mobility,
+    }) => {
+        if (id === choiceId) {
+            user.wealth += wealth;
+            user.health += health;
+            user.mobility += mobility;
         }
     });
 
